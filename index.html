@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NC Centergate | ผู้เชี่ยวชาญระบบประตูอัตโนมัติ</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- นำเข้าฟอนต์จาก Google Fonts (Sarabun และ Prompt) -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+    <!-- 
+      Header & Navigation 
+      ใช้ semantic tag <header> และ <nav> สำหรับส่วนหัวของเว็บไซต์
+    -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/nccentergate-logo.png" alt="NC Centergate Logo">
+                </a>
+            </div>
+            <!-- ปุ่ม Hamburger สำหรับ Mobile -->
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#top" class="active">หน้าแรก</a></li>
+                    <li><a href="#about">เกี่ยวกับเรา</a></li>
+                    <li><a href="#products">สินค้า</a></li>
+                    <li><a href="#services">บริการ</a></li>
+                    <li><a href="#reviews">ผลงาน</a></li>
+                    <li><a href="#contact">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 
+      Main Content Area 
+      ห่อหุ้มเนื้อหาหลักด้วย <main> เพื่อความชัดเจนของโครงสร้าง
+    -->
+    <main>
+        <!-- 
+          Hero Banner Section 
+          ส่วนแรกสุดของเว็บไซต์ที่ดึงดูดสายตา
+        -->
+        <section class="hero-section">
+            <div class="hero-slider">
+                <div class="slide active">
+                    <div class="slide-blur-bg" style="background-image: url('assets/images/home/banner/1779350445418.jpg');"></div>
+                    <div class="slide-img" style="background-image: url('assets/images/home/banner/1779350445418.jpg');"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-blur-bg" style="background-image: url('assets/images/home/banner/1779350452976.jpg');"></div>
+                    <div class="slide-img" style="background-image: url('assets/images/home/banner/1779350452976.jpg');"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-blur-bg" style="background-image: url('assets/images/home/banner/1779350483589.jpg');"></div>
+                    <div class="slide-img" style="background-image: url('assets/images/home/banner/1779350483589.jpg');"></div>
+                </div>
+                <div class="slider-overlay"></div>
+            </div>
+            
+            <div class="container hero-container text-center">
+                <div class="hero-content">
+                    <h1>นวัตกรรมประตูอัตโนมัติ เพื่อความปลอดภัยและสะดวกสบายของคุณ</h1>
+                    <p>NC Centergate ผู้นำเข้าและจัดจำหน่ายมอเตอร์ประตูบานเลื่อนและบานสวิง แบรนด์ชั้นนำ ด้วยประสบการณ์กว่า 20 ปี พร้อมบริการติดตั้งและดูแลหลังการขายโดยทีมช่างผู้เชี่ยวชาญ</p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary">ดูสินค้าของเรา</a>
+                        <a href="#contact" class="btn btn-outline hero-btn-outline">ติดต่อสอบถาม</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- เกี่ยวกับเรา (About Us) -->
+        <section id="about" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>เกี่ยวกับเรา</h2>
+                    <p>ความมุ่งมั่นของเราคือการมอบความปลอดภัยและความสะดวกสบายสูงสุดให้แก่คุณ</p>
+                </div>
+                <div style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+                    <p>บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด เริ่มต้นธุรกิจจากความหลงใหลในเทคโนโลยีระบบประตูอัตโนมัติ ด้วยวิสัยทัศน์ที่ต้องการยกระดับมาตรฐานความปลอดภัยในที่พักอาศัยและอาคารพาณิชย์ของคนไทย เราคัดสรรเฉพาะสินค้าคุณภาพสูงจากแบรนด์ชั้นนำระดับโลก และให้ความสำคัญกับบริการหลังการขายที่รวดเร็ว จริงใจ และเชื่อถือได้</p>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="about.html" class="btn btn-outline">อ่านประวัติเพิ่มเติม</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- สินค้า (Products) -->
+        <section id="products" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>สินค้ายอดนิยม</h2>
+                    <p>ระบบมอเตอร์ประตูอัตโนมัติคุณภาพสูง แข็งแรง ทนทาน รองรับทุกการใช้งาน</p>
+                </div>
+                <div class="grid-layout">
+                    <div class="card product-card">
+                        <div class="card-image" style="background-image: url('assets/images/home/product/maxim1000.png');"></div>
+                        <div class="card-content">
+                            <h3>มอเตอร์บานเลื่อน MAXIM</h3>
+                            <p>เหมาะสำหรับประตูบ้านทั่วไป น้ำหนักไม่เกิน 1,000 กก. ทำงานเงียบ ปลอดภัย</p>
+                            <a href="products.html" class="btn btn-outline" style="width: 100%; margin-top: 15px;">รายละเอียด</a>
+                        </div>
+                    </div>
+                    <div class="card product-card">
+                        <div class="card-image" style="background-image: url('assets/images/home/product/albano-2000y.png');"></div>
+                        <div class="card-content">
+                            <h3>มอเตอร์บานเลื่อน ALBANO</h3>
+                            <p>รองรับประตูขนาดใหญ่ น้ำหนัก 2,000 กก. ทนทานต่องานหนัก (Heavy Duty)</p>
+                            <a href="products.html" class="btn btn-outline" style="width: 100%; margin-top: 15px;">รายละเอียด</a>
+                        </div>
+                    </div>
+                    <div class="card product-card">
+                        <div class="card-image" style="background-image: url('assets/images/home/product/oxygen-hector.jpg');"></div>
+                        <div class="card-content">
+                            <h3>มอเตอร์บานสวิง OXYGEN</h3>
+                            <p>ดีไซน์สวยงาม ทันสมัย เปิด-ปิดนุ่มนวล เหมาะสำหรับประตูบ้านเดี่ยว</p>
+                            <a href="products.html" class="btn btn-outline" style="width: 100%; margin-top: 15px;">รายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="products.html" class="btn btn-outline">ดูสินค้าทั้งหมดเพิ่มเติม</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- บริการ (Services) -->
+        <section id="services" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>บริการของเรา</h2>
+                    <p>บริการครบวงจรจากทีมช่างผู้เชี่ยวชาญ ประสบการณ์กว่า 20 ปี</p>
+                </div>
+                <div class="grid-layout">
+                    <div class="card service-card text-center">
+                        <div class="card-content">
+                            <div class="service-icon">🛠️</div>
+                            <h3>ติดตั้งได้มาตรฐาน</h3>
+                            <p>ติดตั้งรวดเร็ว ปลอดภัย เดินสายไฟเป็นระเบียบ พร้อมทดสอบระบบอย่างละเอียดก่อนส่งมอบ</p>
+                        </div>
+                    </div>
+                    <div class="card service-card text-center">
+                        <div class="card-content">
+                            <div class="service-icon">⚙️</div>
+                            <h3>ซ่อมบำรุงและแก้ไข</h3>
+                            <p>รับซ่อมมอเตอร์ประตูทุกรุ่น ทุกยี่ห้อ พร้อมบริการตรวจเช็คสภาพรายปีเพื่อยืดอายุการใช้งาน</p>
+                        </div>
+                    </div>
+                    <div class="card service-card text-center">
+                        <div class="card-content">
+                            <div class="service-icon">📦</div>
+                            <h3>จำหน่ายอะไหล่แท้</h3>
+                            <p>มีอะไหล่ แผงวงจร รีโมท เซ็นเซอร์กันหนีบ พร้อมจัดส่งและติดตั้งให้ถึงบ้าน</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="services.html" class="btn btn-outline">รายละเอียดบริการเพิ่มเติม</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ผลงาน (Reviews) -->
+        <section id="reviews" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>ผลงานติดตั้งล่าสุด</h2>
+                    <p>ความไว้วางใจจากลูกค้ากว่าพันหลังคาเรือน</p>
+                </div>
+                <div class="grid-layout">
+                    <div class="card review-card">
+                        <div class="card-image"><span>ภาพผลงาน 1</span></div>
+                        <div class="card-content">
+                            <span class="badge">อัปเดตเมื่อสัปดาห์ที่แล้ว</span>
+                            <h3 class="review-title">หมู่บ้านลัดดารมย์ (มอเตอร์บานเลื่อน)</h3>
+                            <p class="text-small">ติดตั้งมอเตอร์ ALBANO สำหรับประตูสแตนเลสผสมไม้</p>
+                        </div>
+                    </div>
+                    <div class="card review-card">
+                        <div class="card-image"><span>ภาพผลงาน 2</span></div>
+                        <div class="card-content">
+                            <span class="badge">อัปเดต 2 สัปดาห์ที่แล้ว</span>
+                            <h3 class="review-title">โครงการโรงงาน (อุตสาหกรรม)</h3>
+                            <p class="text-small">ติดตั้งมอเตอร์รองรับน้ำหนัก 2,000 กก. พร้อมระบบเซ็นเซอร์</p>
+                        </div>
+                    </div>
+                    <div class="card review-card">
+                        <div class="card-image"><span>ภาพผลงาน 3</span></div>
+                        <div class="card-content">
+                            <span class="badge">อัปเดตเดือนที่แล้ว</span>
+                            <h3 class="review-title">บ้านเดี่ยว พัฒนาการ (บานสวิง)</h3>
+                            <p class="text-small">ติดตั้งมอเตอร์บานสวิง OXYGEN แบบซ่อนสายตา</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="reviews.html" class="btn btn-outline">ดูผลงานทั้งหมดเพิ่มเติม</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ติดต่อเรา (Contact Form) -->
+        <section id="contact" class="section-padding bg-light">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info-block">
+                        <h2>ติดต่อเรา</h2>
+                        <p>สอบถามข้อมูลสินค้า ประเมินราคา หรือแจ้งซ่อม เรายินดีให้บริการครับ</p>
+                        <ul class="contact-details">
+                            <li><strong>ที่อยู่:</strong> 123 ถนนเพชรเกษม กรุงเทพมหานคร 10160</li>
+                            <li><strong>โทรศัพท์:</strong> 02-XXX-XXXX, 081-XXX-XXXX</li>
+                            <li><strong>อีเมล:</strong> info@nccentergate.co.th</li>
+                            <li><strong>Line ID:</strong> @nccentergate</li>
+                        </ul>
+                        <div class="map-placeholder">
+                            <span>Google Maps Placeholder</span>
+                        </div>
+                    </div>
+                    <div class="contact-form-block">
+                        <form action="#" method="POST" class="custom-form">
+                            <div class="form-group">
+                                <label for="name">ชื่อ-นามสกุล *</label>
+                                <input type="text" id="name" name="name" required placeholder="กรอกชื่อของคุณ">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">เบอร์โทรศัพท์ *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="กรอกเบอร์โทรศัพท์">
+                            </div>
+                            <div class="form-group">
+                                <label for="service_type">เรื่องที่ต้องการติดต่อ</label>
+                                <select id="service_type" name="service_type">
+                                    <option value="ติดตั้งใหม่">สนใจติดตั้งประตูใหม่</option>
+                                    <option value="แจ้งซ่อม">แจ้งซ่อม/บำรุงรักษา</option>
+                                    <option value="ซื้ออะไหล่">สอบถามอะไหล่/รีโมท</option>
+                                    <option value="อื่นๆ">อื่นๆ</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">รายละเอียดเพิ่มเติม</label>
+                                <textarea id="message" name="message" rows="4" placeholder="ระบุรายละเอียดที่ต้องการ..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">ส่งข้อความ</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="contact.html" class="btn btn-outline">ช่องทางติดต่ออื่นๆ เพิ่มเติม</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+      Footer 
+      ส่วนท้ายของเว็บไซต์ 
+    -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>NC Centergate</h3>
+                    <p>บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด ผู้เชี่ยวชาญด้านระบบประตูรีโมทอัตโนมัติแบบครบวงจร</p>
+                </div>
+                <div class="footer-links">
+                    <h4>เมนูหลัก</h4>
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="#about">เกี่ยวกับเรา</a></li>
+                        <li><a href="#products">สินค้า</a></li>
+                        <li><a href="#services">บริการ</a></li>
+                        <li><a href="#contact">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>ช่องทางลัด</h4>
+                    <p>Line ID: @nccentergate<br>Tel: 02-XXX-XXXX<br>Email: info@nccentergate.co.th</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NC Centergate Co., Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ไฟล์ JavaScript พื้นฐาน -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
