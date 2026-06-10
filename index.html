@@ -100,31 +100,8 @@
                     <h2>สินค้ายอดนิยม</h2>
                     <p>ระบบมอเตอร์ประตูอัตโนมัติคุณภาพสูง แข็งแรง ทนทาน รองรับทุกการใช้งาน</p>
                 </div>
-                <div class="grid-layout">
-                    <div class="card product-card">
-                        <div class="card-image" style="background-image: url('assets/images/home/product/maxim1000.png');"></div>
-                        <div class="card-content">
-                            <h3>มอเตอร์บานเลื่อน MAXIM</h3>
-                            <p>เหมาะสำหรับประตูบ้านทั่วไป น้ำหนักไม่เกิน 1,000 กก. ทำงานเงียบ ปลอดภัย</p>
-                            <a href="products.html" class="btn btn-outline" style="width: 100%; margin-top: 15px;">รายละเอียด</a>
-                        </div>
-                    </div>
-                    <div class="card product-card">
-                        <div class="card-image" style="background-image: url('assets/images/home/product/albano-2000y.png');"></div>
-                        <div class="card-content">
-                            <h3>มอเตอร์บานเลื่อน ALBANO</h3>
-                            <p>รองรับประตูขนาดใหญ่ น้ำหนัก 2,000 กก. ทนทานต่องานหนัก (Heavy Duty)</p>
-                            <a href="products.html" class="btn btn-outline" style="width: 100%; margin-top: 15px;">รายละเอียด</a>
-                        </div>
-                    </div>
-                    <div class="card product-card">
-                        <div class="card-image" style="background-image: url('assets/images/home/product/oxygen-hector.jpg');"></div>
-                        <div class="card-content">
-                            <h3>มอเตอร์บานสวิง OXYGEN</h3>
-                            <p>ดีไซน์สวยงาม ทันสมัย เปิด-ปิดนุ่มนวล เหมาะสำหรับประตูบ้านเดี่ยว</p>
-                            <a href="products.html" class="btn btn-outline" style="width: 100%; margin-top: 15px;">รายละเอียด</a>
-                        </div>
-                    </div>
+                <div id="popular-product-grid" class="grid-layout">
+                    <!-- สินค้ายอดนิยมจะถูกเรนเดอร์ด้วย JavaScript ผ่าน product-render.js -->
                 </div>
                 <div class="text-center" style="margin-top: 40px;">
                     <a href="products.html" class="btn btn-outline">ดูสินค้าทั้งหมดเพิ่มเติม</a>
@@ -291,6 +268,8 @@
     </footer>
 
     <!-- ไฟล์ JavaScript พื้นฐาน -->
+    <script src="assets/js/product-data.js"></script>
+    <script src="assets/js/product-render.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

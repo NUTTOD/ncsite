@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>สินค้า | NC Centergate</title>
+    <title>รายละเอียดสินค้า | NC Centergate</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="top">
     <header class="site-header">
         <div class="container header-container">
             <div class="logo">
@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="index.html">หน้าแรก</a></li>
                     <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
-                    <li><a href="index.html#products" class="active">สินค้า</a></li>
+                    <li><a href="products.html" class="active">สินค้า</a></li>
                     <li><a href="index.html#services">บริการ</a></li>
                     <li><a href="index.html#reviews">ผลงาน</a></li>
                     <li><a href="index.html#contact">ติดต่อเรา</a></li>
@@ -34,15 +34,22 @@
     </header>
 
     <main>
+        <!-- Breadcrumb / ย้อนกลับ -->
+        <div class="breadcrumb-container">
+            <div class="container">
+                <a href="products.html" class="btn-back">
+                    <span class="icon">&laquo;</span> กลับไปหน้าสินค้าทั้งหมด
+                </a>
+            </div>
+        </div>
+
         <section class="section-padding">
             <div class="container">
-                <div class="section-header">
-                    <h2>สินค้าทั้งหมดของเรา</h2>
-                    <p>เลือกสรรระบบประตูอัตโนมัติที่ตอบโจทย์ความต้องการของคุณ</p>
-                </div>
-                
-                <div id="dynamic-product-grid" class="grid-layout">
-                    <!-- สินค้าจะถูกเรนเดอร์ด้วย JavaScript ผ่าน product-render.js -->
+                <!-- ข้อมูลสินค้าจะถูกเรนเดอร์ลงใน Container นี้ด้วย JavaScript -->
+                <div id="product-detail-container">
+                    <div class="text-center" style="padding: 50px 0;">
+                        <p>กำลังโหลดข้อมูลสินค้า...</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -60,7 +67,7 @@
                     <ul>
                         <li><a href="index.html">หน้าแรก</a></li>
                         <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
-                        <li><a href="index.html#products">สินค้า</a></li>
+                        <li><a href="products.html">สินค้า</a></li>
                         <li><a href="index.html#services">บริการ</a></li>
                         <li><a href="index.html#contact">ติดต่อเรา</a></li>
                     </ul>
