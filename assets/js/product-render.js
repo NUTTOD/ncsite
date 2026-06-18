@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="card-content">
                     <h3>${product.name}</h3>
                     <p>${product.shortDesc}</p>
-                    <a href="product-detail.html?id=${product.id}" class="btn btn-outline" style="width: 100%; margin-top: 15px;">รายละเอียด</a>
+                    <a href="product-detail.html?id=${product.id}" class="btn btn-outline" style="width: 100%;">รายละเอียด</a>
                 </div>
             </div>
             `;

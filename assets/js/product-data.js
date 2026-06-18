@@ -5,10 +5,9 @@ const productsData = [
         name: 'มอเตอร์บานเลื่อน MAXIM',
         subtitle: 'ซีรีส์ใหม่ (รองรับ 1000 - 1800kg)',
         shortDesc: 'มอเตอร์บานเลื่อนสำหรับประตูบ้านและโครงการ ขดลวดทองแดงแท้ 100% มีให้เลือกตามน้ำหนักประตู',
-        image: 'assets/nccentergate/MAXIM NEW/MAXIM 370 550 new.png',
+        image: 'assets/images/product/maxim_1000/main.jpg',
         images: [
-            'assets/nccentergate/MAXIM NEW/MAXIM 370 550 new.png',
-            'assets/nccentergate/MAXIM NEW/MAXIM 370 550_2 new.png'
+            'assets/images/product/maxim_1000/main.jpg'
         ],
         variants: [
             {
@@ -66,14 +65,14 @@ const productsData = [
 
     {
         id: 'albano2023y',
-        isPopular: true,
+        isPopular: false,
         name: 'มอเตอร์บานเลื่อน ALBANO',
         subtitle: 'รุ่น 2023Y (1500-2000kg)',
         shortDesc: 'มอเตอร์ทรงพลังสำหรับงานหนัก น้ำหนัก 1,500-2,000 กก. ระบายความร้อนดีเยี่ยม',
         fullDesc: 'มอเตอร์บานเลื่อน ALBANO 2023Y ออกแบบมาสำหรับประตูขนาดใหญ่และหนัก รองรับน้ำหนัก 1,500 ถึง 2,000 กิโลกรัม มีระบบระบายความร้อนที่ดีเยี่ยม เหมาะสำหรับการเปิดปิดบ่อยครั้งในโครงการหรือโรงงาน',
-        image: 'assets/nccentergate/ALBANO 2023Y/Albano 2023Y Spec sheet.png',
+        image: 'assets/images/product/albano_2023/main.jpg',
         images: [
-            'assets/nccentergate/ALBANO 2023Y/Albano 2023Y Spec sheet.png'
+            'assets/images/product/albano_2023/main.jpg'
         ],
         features: [
             'รองรับช่องเสียบการ์ดบลูทูธ เปิด-ปิด ทางมือถือ',
@@ -94,79 +93,15 @@ const productsData = [
         }
     },
     {
-        id: 'dck358',
-        isPopular: false,
-        name: 'มอเตอร์บานเลื่อน MAXIM',
-        subtitle: 'รุ่น DCK-358 (500kg)',
-        shortDesc: 'มอเตอร์ขนาดกะทัดรัดติดตั้งง่าย สำหรับประตูน้ำหนักไม่เกิน 500 กก.',
-        fullDesc: 'มอเตอร์ประตูรีโมท MAXIM รุ่น DCK-358 ออกแบบมาสำหรับประตูบ้านพักอาศัยทั่วไปที่น้ำหนักไม่เกิน 500 กิโลกรัม จุดเด่นคือความสะดวกในการติดตั้งและบำรุงรักษา พร้อมระดับเสียงที่เงียบ <57 dB',
-        image: 'assets/nccentergate/DCK358/DCK358 Spec sheet.png',
-        images: [
-            'assets/nccentergate/DCK358/DCK358 Spec sheet.png',
-            'assets/nccentergate/DCK358/S__38674441.jpg',
-            'assets/nccentergate/DCK358/S__38674461.jpg'
-        ],
-        features: [
-            'มอเตอร์ประตูรีโมท MAXIM รับน้ำหนักได้ไม่เกิน 500 Kg',
-            'มีความสะดวกในการติดตั้งและบำรุงรักษา',
-            'ความเร็วในการเปิดปิด 12 เมตรต่อนาที',
-            'มีกุญแจเพื่อปลดล็อคมอเตอร์ เมื่อเกิดเหตุฉุกเฉิน หรือไฟฟ้าดับ',
-            'ทำงานเงียบ เสียงรบกวนต่ำกว่า 57 เดซิเบล'
-        ],
-        specifications: {
-            'น้ำหนักประตูสูงสุด': '500 kg',
-            'แรงบิดสูงสุด (Max Torque)': '18 Nm',
-            'แหล่งจ่ายไฟ': 'AC Single-phase 110V / 220V - 240V',
-            'กำลังมอเตอร์': '370W',
-            'ความเร็วในการเปิด-ปิด': '12 เมตร/นาที',
-            'ระดับเสียง': '<57 dB',
-            'อุณหภูมิแวดล้อมที่รองรับ': '-45°C ถึง 65°C',
-            'ระดับการป้องกันน้ำและฝุ่น': 'IP44',
-            'ระบบป้องกันความร้อนเกิน': '120°C'
-        }
-    },
-    {
-        id: 'dck388dc',
-        isPopular: false,
-        name: 'มอเตอร์บานเลื่อน MAXIM',
-        subtitle: 'รุ่น DCK-388DC (500kg)',
-        shortDesc: 'มอเตอร์ DC ปลอดภัยสูง รองรับแบตเตอรี่สำรองใช้งานได้แม้ไฟดับ',
-        fullDesc: 'มอเตอร์ประตูรีโมท MAXIM รุ่น DCK-388DC เป็นระบบมอเตอร์ DC ซึ่งมีความปลอดภัยสูง ประหยัดพลังงาน และมีจุดเด่นสำคัญคือการรองรับแบตเตอรี่สำรอง (Battery Backup) ทำให้สามารถเปิด-ปิดประตูได้ตามปกติแม้ในยามที่เกิดไฟฟ้าดับ',
-        image: 'assets/nccentergate/DCK388DC/DCK388DC Spec sheet.png',
-        images: [
-            'assets/nccentergate/DCK388DC/DCK388DC Spec sheet.png',
-            'assets/nccentergate/DCK388DC/S__38805508.jpg',
-            'assets/nccentergate/DCK388DC/S__38903814.jpg'
-        ],
-        features: [
-            'มอเตอร์ประตูรีโมท MAXIM รับน้ำหนักได้ไม่เกิน 500 Kg',
-            'แบตเตอรี่สำรองกรณีไฟดับ (Battery Backup)',
-            'ความสะดวกในการติดตั้งและบำรุงรักษา',
-            'ความเร็วในการเปิดปิด 13 เมตรต่อนาที',
-            'มีกุญแจเพื่อปลดล็อคมอเตอร์ เมื่อเกิดเหตุฉุกเฉิน หรือไฟฟ้าดับ'
-        ],
-        specifications: {
-            'น้ำหนักประตูสูงสุด': '500 kg',
-            'แรงบิดสูงสุด (Max Torque)': '18 Nm',
-            'แหล่งจ่ายไฟ': 'AC 120V / 220V - 240V หรือ DC 120V / 24V',
-            'กำลังมอเตอร์': '150W',
-            'ความเร็วในการเปิด-ปิด': '13 เมตร/นาที',
-            'ระดับเสียง': '<57 dB',
-            'อุณหภูมิแวดล้อมที่รองรับ': '-45°C ถึง 65°C',
-            'ระดับการป้องกันน้ำและฝุ่น': 'IP44',
-            'ระบบป้องกันความร้อนเกิน': '120°C'
-        }
-    },
-    {
         id: 'albano2000y',
-        isPopular: false,
+        isPopular: true,
         name: 'มอเตอร์บานเลื่อน ALBANO',
         subtitle: 'รุ่น 2000Y (1000-1500kg)',
         shortDesc: 'มอเตอร์ทนทาน มีระบบ LARM พร้อมช่องพอร์ทสำหรับไฟหัวเสา',
         fullDesc: 'มอเตอร์ประตูรีโมท ALBANO รุ่น 2000Y รองรับน้ำหนัก 1,000-1,500 กิโลกรัม โดดเด่นด้วยระบบการทำงานที่เสถียรและนิ่มนวล ลดการกระแทก ช่วยยืดอายุการใช้งานของระบบฟันเฟือง พร้อมช่องพอร์ทพิเศษ (LARM) สำหรับไฟหัวเสา',
-        image: 'assets/nccentergate/ALBANO 2000Y/Old/Albano 2000Y Spec sheet.png',
+        image: 'assets/images/product/albano_2000/main.jpg',
         images: [
-            'assets/nccentergate/ALBANO 2000Y/Old/Albano 2000Y Spec sheet.png'
+            'assets/images/product/albano_2000/main.jpg'
         ],
         features: [
             'มอเตอร์ประตูรีโมท ALBANO รับน้ำหนักได้ไม่เกิน 1500 Kg',
@@ -194,9 +129,9 @@ const productsData = [
         subtitle: 'รุ่น 300KG (Swing Gate)',
         shortDesc: 'มอเตอร์บานสวิง แผงวงจรแยกอิสระ รองรับระบบป้องกันประตูกระแทก',
         fullDesc: 'ชุดมอเตอร์ประตูรีโมทแบบบานสวิง MAXIM 300KG รองรับน้ำหนักประตูต่อบานได้ 300-350 กิโลกรัม ทำงานด้วยมอเตอร์ 24VDC คู่ ให้การเปิด-ปิดที่นิ่มนวล แผงวงจรควบคุมถูกออกแบบให้แยกอิสระจากตัวมอเตอร์เพื่อความทนทาน และรองรับระบบป้องกันประตูกระแทกชนสิ่งกีดขวาง',
-        image: 'assets/nccentergate/MAXIM 300 Swing gate/Maxim 300 Swing gate Spec sheet.png',
+        image: 'assets/images/product/maxim_swing_300/main.jpg',
         images: [
-            'assets/nccentergate/MAXIM 300 Swing gate/Maxim 300 Swing gate Spec sheet.png'
+            'assets/images/product/maxim_swing_300/main.jpg'
         ],
         features: [
             'มอเตอร์ประตูรีโมท MAXIM รับน้ำหนักได้ไม่เกิน 350 Kg (ต่อบาน)',
@@ -224,9 +159,9 @@ const productsData = [
         subtitle: 'รุ่น 3500KG (Industrial)',
         shortDesc: 'สุดยอดมอเตอร์สำหรับประตูโรงงานขนาดใหญ่ น้ำหนักสูงสุด 3,500 กก.',
         fullDesc: 'มอเตอร์บานเลื่อน MAXIM 3500KG สำหรับอุตสาหกรรมและโรงงาน รองรับน้ำหนักมหาศาลถึง 3,500 กิโลกรัม ตัวมอเตอร์ขนาดใหญ่มาพร้อมพัดลมระบายความร้อนเพื่อการใช้งานต่อเนื่อง แผงควบคุมแยกส่วนเป็นอิสระเพื่อความปลอดภัยและความเสถียรสูงสุด',
-        image: 'assets/nccentergate/MAXIM 3500/Maxim 3500KG Spec sheet.png',
+        image: 'assets/images/product/maxim_3500/main.jpg',
         images: [
-            'assets/nccentergate/MAXIM 3500/Maxim 3500KG Spec sheet.png'
+            'assets/images/product/maxim_3500/main.jpg'
         ],
         features: [
             'มอเตอร์ประตูรีโมท MAXIM รับน้ำหนักได้ไม่เกิน 3500 Kg',
@@ -244,16 +179,16 @@ const productsData = [
             'อุณหภูมิแวดล้อมที่รองรับ': '-20°C ถึง 100°C'
         }
     },
-    {
+    /*{
         id: 'dkc1500y',
         isPopular: false,
         name: 'มอเตอร์บานเลื่อน DKC',
         subtitle: 'รุ่น DKC1500Y',
         shortDesc: 'มอเตอร์เกียร์น้ำมัน ระบายความร้อนเร็ว เสียงเงียบ ทนทาน',
         fullDesc: 'มอเตอร์เกียร์น้ำมัน (Oil-immersed gearbox) ที่ให้ความเงียบและระบายความร้อนได้อย่างรวดเร็ว ขดลวดทองแดงและเฟืองตัวหนอนแข็งแรงทนทาน (Copper motor and worm gear) มาพร้อมระบบถอยหลังอัตโนมัติเมื่อชนสิ่งกีดขวาง',
-        image: 'assets/nccentergate/DKC1500Y_DKC2000Y_DKC3000S/S__60047366.jpg',
+        image: 'assets/images/product/dkc_1500/main.jpg',
         images: [
-            'assets/nccentergate/DKC1500Y_DKC2000Y_DKC3000S/S__60047366.jpg'
+            'assets/images/product/dkc_1500/main.jpg'
         ],
         features: [
             'Copper motor and worm gear, sturdy and durable',
@@ -274,39 +209,7 @@ const productsData = [
             'ความเร็วในการเปิด': '12m/min(19T) หรือ 14m/min(24T)',
             'สวิตช์จำกัดระยะ': 'Spring or Magnetic'
         }
-    },
-    {
-        id: 'rse',
-        isPopular: false,
-        name: 'มอเตอร์บานเลื่อน RSE',
-        subtitle: 'รุ่น RSE 1000KG',
-        shortDesc: 'มอเตอร์เกียร์อาบน้ำมัน เสียงรบกวนต่ำ ไม่ต้องบำรุงรักษา',
-        fullDesc: 'มอเตอร์บานเลื่อน RSE ใช้ระบบเกียร์อาบน้ำมัน ช่วยให้เสียงรบกวนต่ำและระบายความร้อนได้เร็ว ไม่ต้องบำรุงรักษาบ่อย อายุการใช้งานยาวนาน มีระบบย้อนกลับอัตโนมัติเมื่อมีสิ่งกีดขวางเพิ่มความปลอดภัย',
-        image: 'assets/nccentergate/RSE/RSE.png',
-        images: [
-            'assets/nccentergate/RSE/RSE.png',
-            'assets/nccentergate/RSE/S__68059162.jpg',
-            'assets/nccentergate/RSE/S__68059164.jpg'
-        ],
-        features: [
-            'มอเตอร์ทองแดงและเกลียวตัวหนอน แข็งแรง ทนทาน',
-            'เกียร์อาบน้ำมัน เสียงรบกวนต่ำ และระบายความร้อนได้เร็ว',
-            'การสตาร์ทและหยุดที่นุ่มนวล ทำงานได้ราบรื่น',
-            'ไม่ต้องบำรุงรักษา มีอายุการใช้งานยาวนาน',
-            'ระบบย้อนกลับอัตโนมัติเมื่อมีสิ่งกีดขวาง',
-            'ฟังก์ชันปิดอัตโนมัติและโหมดทางเดินเท้า',
-            'กุญแจปลดล็อกด้วยมือ กรณีไฟฟ้าดับ',
-            'ขั้วต่อสายไฟสำหรับสัญญาณเตือน, โฟโตเซลล์อินฟราเรด เป็นต้น'
-        ],
-        specifications: {
-            'น้ำหนักประตูสูงสุด': '1000 kg',
-            'แหล่งจ่ายไฟ': '220V/50Hz',
-            'ความเร็วในการเปิด-ปิด': '8-18 เมตร/นาที',
-            'ระดับเสียง': '<56 dB',
-            'อุณหภูมิแวดล้อมที่รองรับ': '-40°C ถึง 80°C',
-            'ระดับการป้องกันน้ำและฝุ่น': 'IP44'
-        }
-    }
+    },*/
 ];
 
 // ฟังก์ชันสำหรับดึงข้อมูลสินค้าทั้งหมด
