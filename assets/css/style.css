@@ -488,11 +488,119 @@ img {
     text-align: left;
 }
 
-.about-text-content p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    color: var(--text-main);
-    text-indent: 2em; /* ย่อหน้าบรรทัดแรก */
+/* Minimal Work Grid with Dynamic Hover Effect */
+.minimal-work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    transition: all 0.5s ease;
+}
+
+.work-item {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #eee;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: zoom-in;
+    z-index: 1;
+}
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Hover Effect: The "Fluid" Look */
+.minimal-work-grid:has(.work-item:hover) .work-item:not(:hover) {
+    opacity: 0.6;
+    transform: scale(0.96);
+    filter: blur(2px) grayscale(0.3);
+}
+
+.work-item:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.work-item:hover img {
+    transform: scale(1.15); /* Zoom in to see details */
+}
+
+/* Lightbox Styles */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    padding: 40px;
+    cursor: zoom-out;
+}
+
+.lightbox-img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.lightbox-overlay.active {
+    display: flex;
+}
+
+.lightbox-overlay.active .lightbox-img {
+    transform: scale(1);
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .minimal-work-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .lightbox-overlay {
+        padding: 10px;
+    }
+    
+    .work-item:active {
+        transform: scale(1.03);
+    }
+    
+    .minimal-work-grid:has(.work-item:hover) .work-item:not(:hover) {
+        opacity: 0.8;
+        transform: scale(1);
+        filter: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .minimal-work-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .title-underline {
@@ -627,8 +735,8 @@ img {
         grid-template-columns: 1fr 1fr; /* Footer เป็น 2 คอลัมน์ใน Tablet */
     }
 
-    .contact-wrapper {
-        grid-template-columns: 1fr; /* Contact ฟอร์มเป็น 1 คอลัมน์ */
+    .contact-wrapper, .contact-grid {
+        grid-template-columns: 1fr !important; /* Contact ฟอร์มและ Grid เป็น 1 คอลัมน์ */
     }
 }
 
