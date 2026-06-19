@@ -10,6 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('lang') === 'en') {
+            document.body.classList.add('lang-en');
+        } else {
+            document.body.classList.add('lang-th');
+        }
+    </script>
     <header class="site-header">
         <div class="container header-container">
             <div class="logo">
@@ -17,21 +24,28 @@
                     <img src="assets/images/home/nccentergate-logo.png" alt="NC Centergate Logo">
                 </a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">หน้าแรก</a></li>
-                    <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
-                    <li><a href="index.html#products" class="active">สินค้า</a></li>
-                    <li><a href="index.html#services">บริการ</a></li>
-                    <li><a href="index.html#reviews">ผลงาน</a></li>
-                    <li><a href="index.html#contact">ติดต่อเรา</a></li>
-                </ul>
-            </nav>
+            <div class="header-right" style="display: flex; align-items: center; gap: 20px;">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html"><span class="lang-th">หน้าแรก</span><span class="lang-en">Home</span></a></li>
+                        <li><a href="index.html#about"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en">About Us</span></a></li>
+                        <li><a href="index.html#products" class="active"><span class="lang-th">สินค้า</span><span class="lang-en">Products</span></a></li>
+                        <li><a href="index.html#services"><span class="lang-th">บริการ</span><span class="lang-en">Services</span></a></li>
+                        <li><a href="index.html#reviews"><span class="lang-th">ผลงาน</span><span class="lang-en">Gallery</span></a></li>
+                        <li><a href="index.html#contact"><span class="lang-th">ติดต่อเรา</span><span class="lang-en">Contact Us</span></a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <button onclick="toggleLanguage()" class="btn-lang" aria-label="Toggle Language">
+                        🌐 <span class="lang-th">EN</span><span class="lang-en">TH</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -39,12 +53,12 @@
         <section class="section-padding">
             <div class="container">
                 <div class="section-header">
-                    <h2>สินค้าทั้งหมดของเรา</h2>
-                    <p>เลือกสรรระบบประตูอัตโนมัติที่ตอบโจทย์ความต้องการของคุณ</p>
+                    <h2><span class="lang-th">สินค้าทั้งหมดของเรา</span><span class="lang-en">All Products</span></h2>
+                    <p><span class="lang-th">เลือกสรรระบบประตูอัตโนมัติที่ตอบโจทย์ความต้องการของคุณ</span><span class="lang-en">Select the automatic remote gate system that best matches your needs.</span></p>
                 </div>
                 
                 <div id="dynamic-product-grid" class="grid-layout">
-                    
+                    <!-- Products rendered dynamically by product-render.js -->
                 </div>
             </div>
         </section>

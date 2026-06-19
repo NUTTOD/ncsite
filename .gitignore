@@ -1,2 +1,4 @@
 prompt/
 nccentergate/
+.vercel
+.env*

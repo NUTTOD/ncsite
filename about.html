@@ -7,10 +7,16 @@
     <meta name="description" content="ทำความรู้จักกับ บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด ผู้นำเข้าและจดทะเบียนเครื่องหมายการค้าแบรนด์มอเตอร์ประตูอัตโนมัติ MAXIM และ ALBANO ที่เป็นที่ยอมรับมายาวนาน">
     <meta name="keywords" content="เกี่ยวกับ NC Centergate, บริษัทประตูรีโมท, ผู้นำเข้าประตูรีโมท, มอเตอร์ประตูอัตโนมัติ">
     <link rel="stylesheet" href="assets/css/style.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('lang') === 'en') {
+            document.body.classList.add('lang-en');
+        } else {
+            document.body.classList.add('lang-th');
+        }
+    </script>
     <header class="site-header">
         <div class="container header-container">
             <div class="logo">
@@ -18,42 +24,57 @@
                     <img src="assets/images/home/nccentergate-logo.png" alt="NC Centergate Logo">
                 </a>
             </div>
-            
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">หน้าแรก</a></li>
-                    <li><a href="index.html#about" class="active">เกี่ยวกับเรา</a></li>
-                    <li><a href="index.html#products">สินค้า</a></li>
-                    <li><a href="index.html#services">บริการ</a></li>
-                    <li><a href="index.html#reviews">ผลงาน</a></li>
-                    <li><a href="index.html#contact">ติดต่อเรา</a></li>
-                </ul>
-            </nav>
+            <div class="header-right" style="display: flex; align-items: center; gap: 20px;">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html"><span class="lang-th">หน้าแรก</span><span class="lang-en">Home</span></a></li>
+                        <li><a href="index.html#about" class="active"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en">About Us</span></a></li>
+                        <li><a href="index.html#products"><span class="lang-th">สินค้า</span><span class="lang-en">Products</span></a></li>
+                        <li><a href="index.html#services"><span class="lang-th">บริการ</span><span class="lang-en">Services</span></a></li>
+                        <li><a href="index.html#reviews"><span class="lang-th">ผลงาน</span><span class="lang-en">Gallery</span></a></li>
+                        <li><a href="index.html#contact"><span class="lang-th">ติดต่อเรา</span><span class="lang-en">Contact Us</span></a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <button onclick="toggleLanguage()" class="btn-lang" aria-label="Toggle Language">
+                        🌐 <span class="lang-th">EN</span><span class="lang-en">TH</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <main class="page-content py-5">
         <div class="container">
             <div class="section-header text-center mb-5">
-                <h1 class="section-title">เกี่ยวกับเรา</h1>
+                <h1 class="section-title"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en">About Us</span></h1>
                 <div class="title-underline"></div>
             </div>
             
             <div class="about-text-content">
-                <p>บริษัท เอ็นซี เซ็นเตอร์ เกท ได้จดทะเบียน ร้านค้าเมื่อปี 2547 วันที่ 29 มกราคม และเริ่มจดทะเบียน บริษัท เอ็นซี เซ็นเตอร์ เกท จำกัด วันที่ 25 สิงหาคม 2548 และเป็นผู้นำเข้าระบบเปิดปิด ประตูอัตโนมัติ ที่เราได้ค้นคว้าและทดลองสินค้า อย่างดีก่อนออกสู่ตลาด ภายใต้แบรนด์ สินค้า ที่ชื่อว่า MAXIM และ ALBANO 2 ยี่ห้อนี้ ได้จดทะเบียนเครื่องหมายการค้า กับสำนักเครื่องหมายการค้ากรมทรัพย์สินทางปัญญา และเป็นที่ยอมรับในตลาดมายาวนาน จนถึงปัจจุบัน</p>
-                
-                <p>ด้วยประสบการณ์ จากการติดตั้งและทดลองใช้งาน เราเลือกมอเตอร์ที่มีคุณภาพ และแผงควบคุมอิเล็กทรอนิกส์ ต่างๆ รวมถึงรีโมท ที่มีคุณภาพ และได้มาตรฐาน จากโรงงาน ที่มีเครื่องหมายการค้ารับรองสินค้าต่างๆ</p>
-                
-                <p>บริษัทฯ มีความตั้งใจ ที่จะให้ลูกค้าที่ติดตั้งประตูรีโมทจากเราได้ใช้สินค้าที่มี คุณภาพ และบริการประทับใจ เป็นกันเอง รวดเร็ว ภายใน 24 ชั่วโมง และยินดีให้ คำปรึกษาฟรีสำหรับลูกค้าที่ติดตั้งกับที่อื่น โดยไม่มีค่าใช้จ่าย เราขอเป็นส่วนหนึ่งของ การบริการด้านระบบเปิด-ปิดประตูอัตโนมัติ</p>
+                <div class="lang-th">
+                    <p>บริษัท เอ็นซี เซ็นเตอร์ เกท ได้จดทะเบียน ร้านค้าเมื่อปี 2547 วันที่ 29 มกราคม และเริ่มจดทะเบียน บริษัท เอ็นซี เซ็นเตอร์ เกท จำกัด วันที่ 25 สิงหาคม 2548 และเป็นผู้นำเข้าระบบเปิดปิด ประตูอัตโนมัติ ที่เราได้ค้นคว้าและทดลองสินค้า อย่างดีก่อนออกสู่ตลาด ภายใต้แบรนด์ สินค้า ที่ชื่อว่า MAXIM และ ALBANO 2 ยี่ห้อนี้ ได้จดทะเบียนเครื่องหมายการค้า กับสำนักเครื่องหมายการค้ากรมทรัพย์สินทางปัญญา และเป็นที่ยอมรับในตลาดมายาวนาน จนถึงปัจจุบัน</p>
+                    
+                    <p>ด้วยประสบการณ์ จากการติดตั้งและทดลองใช้งาน เราเลือกมอเตอร์ที่มีคุณภาพ และแผงควบคุมอิเล็กทรอนิกส์ ต่างๆ รวมถึงรีโมท ที่มีคุณภาพ และได้มาตรฐาน จากโรงงาน ที่มีเครื่องหมายการค้ารับรองสินค้าต่างๆ</p>
+                    
+                    <p>บริษัทฯ มีความตั้งใจ ที่จะให้ลูกค้าที่ติดตั้งประตูรีโมทจากเราได้ใช้สินค้าที่มี คุณภาพ และบริการประทับใจ เป็นกันเอง รวดเร็ว ภายใน 24 ชั่วโมง และยินดีให้ คำปรึกษาฟรีสำหรับลูกค้าที่ติดตั้งกับที่อื่น โดยไม่มีค่าใช้จ่าย เราขอเป็นส่วนหนึ่งของ การบริการด้านระบบเปิด-ปิดประตูอัตโนมัติ</p>
+                </div>
+                <div class="lang-en">
+                    <p>NC Centergate registered as a retail business on January 29, 2004, and officially incorporated as NC Centergate Co., Ltd. on August 25, 2005. We are a premier importer of automatic gate systems, researching and thoroughly testing all products before introducing them to the market. Our registered trademark brands, MAXIM and ALBANO, have been recognized and trusted in the market for a long time.</p>
+                    
+                    <p>Based on our extensive installation and testing experience, we select only high-quality motors, electronic control boards, and remotes certified by standardized manufacturers.</p>
+                    
+                    <p>We are dedicated to providing our clients with top-quality products and warm, impressive, and fast after-sales services within 24 hours. We are also happy to provide free advice to customers who installed systems elsewhere. We are proud to be your trusted partner in automatic gate solutions.</p>
+                </div>
             </div>
             
             <div class="text-center mt-5">
-                <a href="index.html" class="btn btn-primary">กลับสู่หน้าแรก</a>
+                <a href="index.html" class="btn btn-primary"><span class="lang-th">กลับสู่หน้าแรก</span><span class="lang-en">Back to Home</span></a>
             </div>
         </div>
     </main>

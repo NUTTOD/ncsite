@@ -10,6 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('lang') === 'en') {
+            document.body.classList.add('lang-en');
+        } else {
+            document.body.classList.add('lang-th');
+        }
+    </script>
     <header class="site-header">
         <div class="container header-container">
             <div class="logo">
@@ -17,61 +24,54 @@
                     <img src="assets/images/home/nccentergate-logo.png" alt="NC Centergate Logo">
                 </a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">หน้าแรก</a></li>
-                    <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
-                    <li><a href="index.html#products">สินค้า</a></li>
-                    <li><a href="index.html#services">บริการ</a></li>
-                    <li><a href="index.html#reviews" class="active">ผลงาน</a></li>
-                    <li><a href="index.html#contact">ติดต่อเรา</a></li>
-                </ul>
-            </nav>
+            <div class="header-right" style="display: flex; align-items: center; gap: 20px;">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html"><span class="lang-th">หน้าแรก</span><span class="lang-en">Home</span></a></li>
+                        <li><a href="index.html#about"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en">About Us</span></a></li>
+                        <li><a href="index.html#products"><span class="lang-th">สินค้า</span><span class="lang-en">Products</span></a></li>
+                        <li><a href="index.html#services"><span class="lang-th">บริการ</span><span class="lang-en">Services</span></a></li>
+                        <li><a href="index.html#reviews" class="active"><span class="lang-th">ผลงาน</span><span class="lang-en">Gallery</span></a></li>
+                        <li><a href="index.html#contact"><span class="lang-th">ติดต่อเรา</span><span class="lang-en">Contact Us</span></a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <button onclick="toggleLanguage()" class="btn-lang" aria-label="Toggle Language">
+                        🌐 <span class="lang-th">EN</span><span class="lang-en">TH</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main class="py-5">
+    <main class="page-content py-5">
         <div class="container">
             <div class="section-header text-center mb-5">
-                <h1 class="section-title">ผลงานของเรา</h1>
-                <p>ความภาคภูมิใจในทุกงานติดตั้ง</p>
+                <h1 class="section-title">
+                    <span class="lang-th">ผลงานของเรา</span>
+                    <span class="lang-en">Our Projects</span>
+                </h1>
+                <p>
+                    <span class="lang-th">ความภาคภูมิใจในทุกงานติดตั้ง</span>
+                    <span class="lang-en">Our pride and commitment in every installation project.</span>
+                </p>
                 <div class="title-underline"></div>
             </div>
 
             <div class="minimal-work-grid">
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251245082.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251245028.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251244950.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251244817.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251243212.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251240996.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251192703.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251192638.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251192568.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251192484.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251181623.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251181553.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1781251181240.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350496676.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350489945.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350485735.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350483589.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350477799.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350475318.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350467773.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350459531.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350452976.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350448069.jpg" alt="ผลงานติดตั้ง"></div>
-                <div class="work-item" onclick="openLightbox(this)"><img src="assets/images/work/1779350445418.jpg" alt="ผลงานติดตั้ง"></div>
+                <!-- Works rendered dynamically by work-render.js -->
             </div>
             
             <div class="text-center mt-5">
-                <a href="index.html" class="btn btn-outline">กลับสู่หน้าแรก</a>
+                <a href="index.html" class="btn btn-outline">
+                    <span class="lang-th">กลับสู่หน้าแรก</span>
+                    <span class="lang-en">Back to Home</span>
+                </a>
             </div>
         </div>
     </main>
