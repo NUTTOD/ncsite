@@ -1,7 +1,6 @@
-// script สำหรับเรนเดอร์ผลงานในหน้าต่างๆ
+
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // 1. เรนเดอร์ผลงานล่าสุดในหน้าแรก (index.html)
+
     const recentWorkGrid = document.querySelector('#reviews .grid-layout');
     if (recentWorkGrid) {
         const latestWorks = getLatestWorks(3);
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         recentWorkGrid.innerHTML = html;
     }
 
-    // 2. เรนเดอร์ผลงานทั้งหมดในหน้าผลงาน (reviews.html)
     const workGrid = document.querySelector('.minimal-work-grid');
     if (workGrid) {
         const allWorks = getAllWorks();

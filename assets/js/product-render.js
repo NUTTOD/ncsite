@@ -1,14 +1,12 @@
-// script สำหรับเรนเดอร์สินค้าในหน้าต่างๆ
+
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // 1. เรนเดอร์สินค้ายอดนิยมในหน้าแรก (index.html)
+
     const popularProductGrid = document.getElementById('popular-product-grid');
     if (popularProductGrid) {
         const products = getAllProducts().filter(product => product.isPopular);
         popularProductGrid.innerHTML = generateProductCards(products);
     }
 
-    // 2. เรนเดอร์สินค้าทั้งหมดในหน้าสินค้า (products.html)
     const productGrid = document.getElementById('dynamic-product-grid');
     if (productGrid) {
         const products = getAllProducts();
@@ -32,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return html;
     }
 
-        // 3. เรนเดอร์รายละเอียดสินค้าในหน้า product-detail.html
     const productDetailContainer = document.getElementById('product-detail-container');
     if (productDetailContainer) {
         const urlParams = new URLSearchParams(window.location.search);
@@ -41,17 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const product = getProductById(productId);
         
         if (product) {
-            // เซ็ต Title ของหน้าเว็บ
-            document.title = `${product.name} | NC Centergate`;
             
-            // เตรียมตรวจสอบเรื่อง Variants
+            document.title = `${product.name} | NC Centergate`;
+
             const hasVariants = product.variants && product.variants.length > 0;
             let currentVariantIndex = 0;
-            
-            // เก็บข้อมูล state ไว้ใน window หรือตัวแปรโกลบอลเพื่อใช้ตอนกดปุ่ม
+
             window.currentProductData = product;
-            
-            // สร้าง Image Gallery (Shopee/Lazada style)
+
             let galleryImages = product.images && product.images.length > 0 ? product.images : [product.image];
             let mainImage = galleryImages[0];
             
@@ -67,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 thumbnailsHtml += '</div>';
             }
 
-            // โครงสร้างหลักของหน้า
             const html = `
                 <div class="product-detail-layout">
                     <div class="product-gallery-section">
@@ -82,8 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             productDetailContainer.innerHTML = html;
-            
-            // ฟังก์ชันสำหรับเรนเดอร์เนื้อหาส่วนรายละเอียด (ถูกเรียกใช้เมื่อเปลี่ยน variant)
+
             window.renderDetailSection = function(variantIndex) {
                 currentVariantIndex = variantIndex;
                 const data = hasVariants ? product.variants[variantIndex] : product;
@@ -157,16 +149,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('product-info-render-area').innerHTML = infoHtml;
             };
 
-            // เรียกใช้ครั้งแรก
             window.renderDetailSection(0);
-            
-            // สร้าง Modal สำหรับเปรียบเทียบสเปค (ถ้ามี)
+
             if (hasVariants && product.variants.length > 1) {
                 createCompareModal(product);
             }
             
         } else {
-            // ไม่พบสินค้า
+            
             productDetailContainer.innerHTML = `
                 <div class="text-center" style="padding: 50px 0;">
                     <h2>ไม่พบข้อมูลสินค้า</h2>
@@ -178,21 +168,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// ฟังก์ชันสำหรับเปลี่ยนรูปภาพหลักในแกลเลอรี่
 window.changeMainImage = function(element, imageUrl) {
-    // เปลี่ยนรูปหลัก
-    document.getElementById('main-product-image').src = imageUrl;
     
-    // อัปเดตคลาส active ของรูปเล็ก
+    document.getElementById('main-product-image').src = imageUrl;
+
     const thumbnails = document.querySelectorAll('.thumbnail-item');
     thumbnails.forEach(thumb => thumb.classList.remove('active'));
     element.classList.add('active');
 };
 
-
-// ฟังก์ชันสร้างและจัดการ Modal เปรียบเทียบสเปค
 window.createCompareModal = function(product) {
-    // หาคีย์ทั้งหมดที่มีในสเปคของทุกรุ่น (เพื่อสร้างตาราง)
+    
     const allSpecKeys = new Set();
     product.variants.forEach(v => {
         if(v.specifications) {
@@ -239,10 +225,8 @@ window.createCompareModal = function(product) {
         </div>
     `;
 
-    // แทรก Modal ลงใน body
     document.body.insertAdjacentHTML('beforeend', modalHtml);
-    
-    // ปิด Modal เมื่อคลิกพื้นที่ว่าง
+
     document.getElementById('compare-modal').addEventListener('click', function(e) {
         if(e.target === this) {
             closeCompareModal();
@@ -254,7 +238,7 @@ window.openCompareModal = function() {
     const modal = document.getElementById('compare-modal');
     if (modal) {
         modal.classList.add('active');
-        document.body.style.overflow = 'hidden'; // ป้องกันการเลื่อนหน้าจอ
+        document.body.style.overflow = 'hidden'; 
     }
 };
 

@@ -1,31 +1,24 @@
-/* 
-  ========================================
-  CSS Variables & Base Reset
-  ========================================
-*/
+
 :root {
-    /* Color Palette (NC Centergate Branding) */
-    --primary-color: #009245; /* สีเขียวจากโลโก้ */
+    
+    --primary-color: #009245; 
     --primary-light: #0b7f3f;
-    --accent-color: #dc323f; /* สีแดงจากโลโก้ */
-    --text-heading: #2d3748; /* สีเทาเข้มสำหรับหัวข้อ ดูเป็นทางการ */
+    --accent-color: #dc323f; 
+    --text-heading: #2d3748; 
     --text-main: #333333;
     --text-muted: #666666;
     --bg-main: rgb(247, 255, 247);
     --bg-light: #f8f9fa;
     --border-color: #e2e8f0;
 
-    /* Typography */
-    --font-heading: 'Prompt', sans-serif; /* ฟอนต์หัวข้อ ดูทันสมัย แข็งแรง */
-    --font-body: 'Sarabun', sans-serif;   /* ฟอนต์เนื้อหา อ่านง่าย */
-    
-    /* Spacing & Layout */
+    --font-heading: 'Prompt', sans-serif; 
+    --font-body: 'Sarabun', sans-serif;   
+
     --container-max-width: 1200px;
     --section-padding: 80px 0;
     --transition-speed: 0.3s;
 }
 
-/* CSS Reset พื้นฐานเพื่อให้หน้าตาเหมือนกันทุกเบราว์เซอร์ */
 * {
     margin: 0;
     padding: 0;
@@ -33,8 +26,8 @@
 }
 
 html {
-    scroll-behavior: smooth; /* เลื่อนหน้าเว็บแบบนุ่มนวลเมื่อคลิกลิงก์ภายในเพจ */
-    scroll-padding-top: 80px; /* เผื่อระยะให้หัวข้อพอดีกับความสูงของ Header (80px) */
+    scroll-behavior: smooth; 
+    scroll-padding-top: 80px; 
 }
 
 body {
@@ -45,7 +38,6 @@ body {
     font-size: 16px;
 }
 
-/* ตั้งค่าพื้นฐานสำหรับหัวข้อ (Headings) */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--text-heading);
@@ -74,19 +66,12 @@ img {
     display: block;
 }
 
-/* 
-  ========================================
-  Layout Utilities (Container & Grid)
-  ========================================
-*/
-/* คอนเทนเนอร์หลักสำหรับจำกัดความกว้างและจัดกึ่งกลางเนื้อหา */
 .container {
     width: 90%;
     max-width: var(--container-max-width);
     margin: 0 auto;
 }
 
-/* ระยะห่างของแต่ละ Section */
 .placeholder-section {
     padding: var(--section-padding);
     text-align: center;
@@ -95,17 +80,12 @@ img {
     background-color: var(--bg-light);
 }
 
-/* 
-  ========================================
-  Buttons
-  ========================================
-*/
 .btn {
     display: inline-block;
     padding: 12px 28px;
     font-family: var(--font-heading);
     font-weight: 500;
-    border-radius: 4px; /* มุมมนเล็กน้อยดูเป็นทางการ */
+    border-radius: 4px; 
     cursor: pointer;
     transition: all var(--transition-speed) ease;
     text-align: center;
@@ -132,15 +112,10 @@ img {
     color: #ffffff;
 }
 
-/* 
-  ========================================
-  Header & Navigation
-  ========================================
-*/
 .site-header {
     background-color: var(--bg-main);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* เงาบางๆ แยกส่วนหัวออกจากเนื้อหา */
-    position: sticky; /* ล็อกเมนูไว้ด้านบนเมื่อเลื่อนหน้าจอ */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+    position: sticky; 
     top: 0;
     z-index: 1000;
 }
@@ -153,13 +128,12 @@ img {
 }
 
 .logo img {
-    height: 70px; /* ปรับขนาดโลโก้ให้พอดี */
+    height: 70px; 
 }
 
-/* เมนูหลักสำหรับ Desktop (ใช้ Flexbox ในการจัดเรียงแนวนอน) */
 .main-nav ul {
     display: flex;
-    gap: 30px; /* ระยะห่างระหว่างเมนู */
+    gap: 30px; 
 }
 
 .main-nav a {
@@ -170,7 +144,6 @@ img {
     padding: 5px 0;
 }
 
-/* เอฟเฟกต์เส้นใต้เวลาเอาเมาส์ชี้ (Hover Effect) */
 .main-nav a::after {
     content: '';
     position: absolute;
@@ -192,7 +165,6 @@ img {
     color: var(--accent-color);
 }
 
-/* ปุ่ม Hamburger ซ่อนไว้ในหน้าจอใหญ่ */
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -210,11 +182,6 @@ img {
     transition: all 0.3s;
 }
 
-/* 
-  ========================================
-  Hero Section
-  ========================================
-*/
 .hero-section {
     position: relative;
     padding: 120px 0;
@@ -249,7 +216,6 @@ img {
     opacity: 1;
 }
 
-/* ภาพเบลอด้านหลัง (เพื่อให้เต็มจอโดยไม่ผิดสัดส่วน) */
 .slide-blur-bg {
     position: absolute;
     top: -5%;
@@ -262,7 +228,6 @@ img {
     opacity: 0.6;
 }
 
-/* ภาพคมชัดตรงกลาง */
 .slide-img {
     position: absolute;
     top: 0;
@@ -275,7 +240,6 @@ img {
     z-index: 2;
 }
 
-/* แผ่นฟิล์มสีดำทับบางๆ เพื่อให้ข้อความอ่านง่ายขึ้น */
 .slider-overlay {
     position: absolute;
     top: 0;
@@ -330,11 +294,6 @@ img {
     color: var(--text-main);
 }
 
-/* 
-  ========================================
-  Footer
-  ========================================
-*/
 .site-footer {
     background-color: var(--primary-color);
     color: #ffffff;
@@ -354,7 +313,6 @@ img {
     color: #ffffff;
 }
 
-/* ใช้ CSS Grid สำหรับจัดเลย์เอาต์ Footer */
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -376,11 +334,6 @@ img {
     font-size: 0.9rem;
 }
 
-/* 
-  ========================================
-  Section Layouts & Grids
-  ========================================
-*/
 .section-padding {
     padding: var(--section-padding);
 }
@@ -417,11 +370,6 @@ img {
     gap: 30px;
 }
 
-/* 
-  ========================================
-  Cards (Products, Services, Reviews)
-  ========================================
-*/
 .card {
     background-color: var(--bg-main);
     border-radius: 8px;
@@ -473,7 +421,6 @@ img {
 
 .text-center { text-align: center; }
 
-/* Spacing Utilities */
 .py-5 { padding-top: 3rem; padding-bottom: 3rem; }
 .mt-5 { margin-top: 3rem; }
 .mb-5 { margin-bottom: 3rem; }
@@ -488,7 +435,6 @@ img {
     text-align: left;
 }
 
-/* Minimal Work Grid with Dynamic Hover Effect */
 .minimal-work-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -514,7 +460,6 @@ img {
     transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* Hover Effect: The "Fluid" Look */
 .minimal-work-grid:has(.work-item:hover) .work-item:not(:hover) {
     opacity: 0.6;
     transform: scale(0.96);
@@ -528,10 +473,9 @@ img {
 }
 
 .work-item:hover img {
-    transform: scale(1.15); /* Zoom in to see details */
+    transform: scale(1.15); 
 }
 
-/* Lightbox Styles */
 .lightbox-overlay {
     position: fixed;
     top: 0;
@@ -575,7 +519,6 @@ img {
     cursor: pointer;
 }
 
-/* Mobile Adjustments */
 @media (max-width: 768px) {
     .minimal-work-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -632,11 +575,6 @@ img {
     color: var(--text-muted);
 }
 
-/* 
-  ========================================
-  Contact Form Section
-  ========================================
-*/
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -716,14 +654,9 @@ img {
     border-color: var(--primary-color);
 }
 
-/* 
-  ========================================
-  Responsive Design (Mobile & Tablet)
-  ========================================
-*/
 @media (max-width: 992px) {
     .hero-container {
-        grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ (บน-ล่าง) */
+        grid-template-columns: 1fr; 
         text-align: center;
     }
     
@@ -732,21 +665,20 @@ img {
     }
     
     .footer-grid {
-        grid-template-columns: 1fr 1fr; /* Footer เป็น 2 คอลัมน์ใน Tablet */
+        grid-template-columns: 1fr 1fr; 
     }
 
     .contact-wrapper, .contact-grid {
-        grid-template-columns: 1fr !important; /* Contact ฟอร์มและ Grid เป็น 1 คอลัมน์ */
+        grid-template-columns: 1fr !important; 
     }
 }
 
 @media (max-width: 768px) {
-    /* แสดงปุ่ม Hamburger */
+    
     .mobile-menu-btn {
         display: flex;
     }
-    
-    /* ซ่อนเมนูหลักและเตรียมปรับให้เป็น Sidebar หรือ Dropdown ผ่าน JS (เบื้องต้นซ่อนก่อน) */
+
     .main-nav {
         display: none; 
         position: absolute;
@@ -759,7 +691,7 @@ img {
     }
     
     .main-nav.active {
-        display: block; /* คลาสนี้จะถูกสลับโดย JavaScript */
+        display: block; 
     }
     
     .main-nav ul {
@@ -773,16 +705,11 @@ img {
     }
     
     .footer-grid {
-        grid-template-columns: 1fr; /* Footer เป็น 1 คอลัมน์ใน Mobile */
+        grid-template-columns: 1fr; 
         text-align: center;
     }
 }
 
-/* 
-  ========================================
-  Product Details Layout
-  ========================================
-*/
 .product-detail-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -879,7 +806,6 @@ img {
     background-color: var(--bg-light);
 }
 
-/* Breadcrumb Styling */
 .breadcrumb-container {
     padding: 20px 0;
     border-bottom: 1px solid var(--border-color);
@@ -904,7 +830,6 @@ img {
     color: var(--primary-color);
 }
 
-/* Image Gallery (Shopee/Lazada style) */
 .product-gallery-section {
     display: flex;
     flex-direction: column;
@@ -935,7 +860,7 @@ img {
     display: flex;
     gap: 10px;
     overflow-x: auto;
-    padding-bottom: 5px; /* for scrollbar space if needed */
+    padding-bottom: 5px; 
 }
 
 .thumbnail-item {
@@ -970,7 +895,7 @@ img {
         grid-template-columns: 1fr;
     }
 }
-/* Variant Selector */
+
 .variant-selector-container {
     margin-bottom: 25px;
     padding: 15px;
@@ -1037,7 +962,6 @@ img {
     background-color: #fff;
 }
 
-/* Compare Modal */
 .modal-overlay {
     position: fixed;
     top: 0;

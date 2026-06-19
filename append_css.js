@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = "/mnt/c/NUTTOD/Work/Develope/html/nccentergate/assets/css/style.css";
 
 const cssLogic = `
-/* Variant Selector */
+
 .variant-selector-container {
     margin-bottom: 25px;
     padding: 15px;
@@ -64,7 +64,6 @@ const cssLogic = `
     color: var(--accent-color);
 }
 
-/* Compare Modal */
 .modal-overlay {
     position: fixed;
     top: 0;

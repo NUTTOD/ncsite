@@ -214,45 +214,13 @@ const productsData = [
             'อุณหภูมิแวดล้อมที่รองรับ': '-20°C ถึง 100°C'
         }
     },
-    /*{
-        id: 'dkc1500y',
-        isPopular: false,
-        name: 'มอเตอร์บานเลื่อน DKC',
-        subtitle: 'รุ่น DKC1500Y',
-        shortDesc: 'มอเตอร์เกียร์น้ำมัน ระบายความร้อนเร็ว เสียงเงียบ ทนทาน',
-        fullDesc: 'มอเตอร์เกียร์น้ำมัน (Oil-immersed gearbox) ที่ให้ความเงียบและระบายความร้อนได้อย่างรวดเร็ว ขดลวดทองแดงและเฟืองตัวหนอนแข็งแรงทนทาน (Copper motor and worm gear) มาพร้อมระบบถอยหลังอัตโนมัติเมื่อชนสิ่งกีดขวาง',
-        image: 'assets/images/product/dkc_1500/main.jpg',
-        images: [
-            'assets/images/product/dkc_1500/main.jpg'
-        ],
-        features: [
-            'Copper motor and worm gear, sturdy and durable',
-            'Oil-immersed gearbox, low noise and fast heat dissipation',
-            'Soft start and soft stop, smooth running',
-            'Maintenance-free, long service life',
-            'Auto-reverse when obstruction',
-            'Auto-close function and pedestrian mode',
-            'Manual release key in case of power failure',
-            'Wiring terminals for alarm lamp, infrared photocell, etc.'
-        ],
-        specifications: {
-            'น้ำหนักประตูสูงสุด': '1500 kg',
-            'แหล่งจ่ายไฟ': '220V or 110V',
-            'กำลังมอเตอร์': '450W',
-            'แรงบิดเอาต์พุต': '30 N.m',
-            'ระบบควบคุม': 'Built-in control panel',
-            'ความเร็วในการเปิด': '12m/min(19T) หรือ 14m/min(24T)',
-            'สวิตช์จำกัดระยะ': 'Spring or Magnetic'
-        }
-    },*/
+    
 ];
 
-// ฟังก์ชันสำหรับดึงข้อมูลสินค้าทั้งหมด
 function getAllProducts() {
     return productsData;
 }
 
-// ฟังก์ชันสำหรับดึงข้อมูลสินค้าตาม ID
 function getProductById(id) {
     return productsData.find(product => product.id === id);
 }
