@@ -9,7 +9,9 @@ const productsData = [
         shortDescEn: 'Sliding gate motor for home and commercial projects. 100% pure copper coil. Available in various capacities.',
         image: 'assets/images/product/maxim_1000/main.jpg',
         images: [
-            'assets/images/product/maxim_1000/main.jpg'
+            'assets/images/product/maxim_1000/main.jpg',
+            'assets/images/product/maxim_1000/2.jpg',
+            'assets/images/product/maxim_1000/1.jpg'
         ],
         variants: [
             {
@@ -120,7 +122,8 @@ const productsData = [
         fullDescEn: 'ALBANO 2023Y sliding gate motor is designed for large and heavy gates. Supporting 1,500 to 2,000 kg, it features a superior cooling system, making it perfect for high-frequency operations in commercial projects and factories.',
         image: 'assets/images/product/albano_2023/main.jpg',
         images: [
-            'assets/images/product/albano_2023/main.jpg'
+            'assets/images/product/albano_2023/main.jpg',
+            'assets/images/product/albano_2023/1.jpg'
         ],
         features: [
             'รองรับช่องเสียบการ์ดบลูทูธ เปิด-ปิด ทางมือถือ',
@@ -163,29 +166,28 @@ const productsData = [
         name: 'ALBANO 2000Y',
         subtitle: 'รุ่น 2000Y (1000-1500kg)',
         subtitleEn: 'Model 2000Y (1000-1500kg)',
-        shortDesc: 'มอเตอร์ทนทาน มีระบบ LARM พร้อมช่องพอร์ทสำหรับไฟหัวเสา',
-        shortDescEn: 'Durable motor, equipped with LARM system and lamp ports.',
-        fullDesc: 'มอเตอร์ประตูรีโมท ALBANO รุ่น 2000Y รองรับน้ำหนัก 1,000-1,500 กิโลกรัม โดดเด่นด้วยระบบการทำงานที่เสถียรและนิ่มนวล ลดการกระแทก ช่วยยืดอายุการใช้งานของระบบฟันเฟือง พร้อมช่องพอร์ทพิเศษ (LARM) สำหรับไฟหัวเสา',
-        fullDescEn: 'ALBANO 2000Y sliding gate motor, supporting gates up to 1,000-1,500 kg. Known for stable and smooth operations, reducing gate impacts to extend gear life. Comes with a dedicated LARM port for gate pillar lights.',
+        shortDesc: 'รองรับน้ำหนัก 1,000-1,500 กิโลกรัม โดดเด่นด้วยระบบการทำงานที่เสถียรและนิ่มนวล ลดการกระแทก',
+        shortDescEn: 'supporting gates up to 1,000-1,500 kg. Known for stable and smooth operations',
+        fullDesc: 'มอเตอร์ประตูรีโมท ALBANO รุ่น 2000Y รองรับน้ำหนัก 1,000-1,500 กิโลกรัม โดดเด่นด้วยระบบการทำงานที่เสถียรและนิ่มนวล ลดการกระแทก ช่วยยืดอายุการใช้งานของระบบฟันเฟือง',
+        fullDescEn: 'ALBANO 2000Y sliding gate motor, supporting gates up to 1,000-1,500 kg. Known for stable and smooth operations, reducing gate impacts to extend gear life.',
         image: 'assets/images/product/albano_2000/main.jpg',
         images: [
-            'assets/images/product/albano_2000/main.jpg'
+            'assets/images/product/albano_2000/main.jpg',
+            'assets/images/product/albano_2000/1.jpg',
+            'assets/images/product/albano_2000/2.jpg'
         ],
         features: [
             'มอเตอร์ประตูรีโมท ALBANO รับน้ำหนักได้ไม่เกิน 1500 Kg',
-            'ระบบเปิดปิดอย่างนิ่มนวล soft start and soft stop เพื่อลดการกระแทก',
-            'เพิ่มอายุการใช้งานของระบบฟันเฟือง',
+            'ระบบเปิดปิดอย่างนิ่มนวล soft start and soft stop เพื่อลดการกระแทก เพิ่มอายุการใช้งานของระบบฟันเฟือง',
             'ระบบการออกตัวของมอเตอร์ มีความนิ่มนวลและเสถียรอย่างมีประสิทธิภาพ',
-            'มีกุญแจเพื่อปลดล็อคมอเตอร์ เมื่อเกิดเหตุฉุกเฉิน หรือไฟฟ้าดับ',
-            'LARM มีช่องพอร์ทสำหรับไฟหัวเสา'
+            'มีกุญแจเพื่อปลดล็อคมอเตอร์ เมื่อเกิดเหตุฉุกเฉิน หรือไฟฟ้าดับ'
         ],
         featuresEn: [
             'Supports gates up to 1,500 kg',
             'Soft start & soft stop system for smooth operation',
             'Extends the lifespan of the gear system',
             'Smooth and highly efficient motor startup',
-            'Manual release key for emergency or power failure',
-            'Dedicated LARM port for pillar lights'
+            'Manual release key for emergency or power failure'
         ],
         specifications: {
             'น้ำหนักประตูสูงสุด': '1000-1500 kg',
@@ -220,7 +222,15 @@ const productsData = [
         fullDescEn: 'Quiko Ercole (QK-E2500) industrial sliding gate operator, manufactured and imported from Italy. Designed specifically for heavy-duty and super intensive use (90% working cycle), featuring oil-bath lubrication to minimize wear and dissipate heat quickly, along with a mechanical clutch for ultimate safety.',
         image: 'assets/images/product/quiko_ercole/main.jpg',
         images: [
-            'assets/images/product/quiko_ercole/main.jpg'
+            'assets/images/product/quiko_ercole/main.jpg',
+            'assets/images/product/quiko_ercole/1.jpg',
+            'assets/images/product/quiko_ercole/2.jpg',
+            'assets/images/product/quiko_ercole/3.jpg',
+            'assets/images/product/quiko_ercole/4.jpg',
+            'assets/images/product/quiko_ercole/5.jpg',
+            'assets/images/product/quiko_ercole/6.jpg',
+            'assets/images/product/quiko_ercole/7.jpg',
+            'assets/images/product/quiko_ercole/8.jpg',
         ],
         features: [
             'ผลิตและนำเข้าจากประเทศอิตาลี (Made in Italy) 100%',
@@ -245,7 +255,7 @@ const productsData = [
             'แหล่งจ่ายไฟ': '230 VAC / 400 VAC (3เฟส) (50/60Hz)',
             'กำลังมอเตอร์': '650W',
             'กระแสไฟฟ้าใช้งาน': '2.4 A',
-            'ความเร็วในการเปิด-ปิด': '12 เมตร/นาที (รุ่นปกติ) / สูงสุด 20 เมตร/นาที (รุ่น Inverter)',
+            'ความเร็วในการเปิด-ปิด': '12 เมตร/นาที',
             'อัตราการทำงาน (Working Cycle)': '90% (Super Intensive)',
             'ระบบหล่อลื่นเกียร์': 'แช่ในอ่างน้ำมัน (Oil-bath)',
             'ระดับการป้องกันน้ำและฝุ่น': 'IP55',
@@ -259,7 +269,7 @@ const productsData = [
             'Power Supply': '230 VAC / 400 VAC (3-phase) (50/60Hz)',
             'Motor Power': '650W',
             'Absorbed Current': '2.4 A',
-            'Opening/Closing Speed': '12 m/min (Standard) / Up to 20 m/min (Inverter)',
+            'Opening/Closing Speed': '12 m/min',
             'Working Cycle': '90% (Super Intensive)',
             'Gear Lubrication': 'Oil-bath',
             'IP Protection Rating': 'IP55',
@@ -267,57 +277,6 @@ const productsData = [
             'Overload Cut-out': '130°C',
             'Motor Weight': '19 kg',
             'Operating Temperature': '-30°C to 70°C'
-        }
-    },
-    {
-        id: 'maxim300swing',
-        isPopular: false,
-        name: 'MAXIM มอเตอร์บานสวิง ',
-        subtitle: 'รุ่น 300KG (Swing Gate)',
-        subtitleEn: 'Model 300KG (Swing Gate)',
-        shortDesc: 'มอเตอร์บานสวิง แผงวงจรแยกอิสระ รองรับระบบป้องกันประตูกระแทก',
-        shortDescEn: 'Swing gate operator, independent control panel, supports anti-collision protection.',
-        fullDesc: 'ชุดมอเตอร์ประตูรีโมทแบบบานสวิง MAXIM 300KG รองรับน้ำหนักประตูต่อบานได้ 300-350 กิโลกรัม ทำงานด้วยมอเตอร์ 24VDC คู่ ให้การเปิด-ปิดที่นิ่มนวล แผงวงจรควบคุมถูกออกแบบให้แยกอิสระจากตัวมอเตอร์เพื่อความทนทาน และรองรับระบบป้องกันประตูกระแทกชนสิ่งกีดขวาง',
-        fullDescEn: 'MAXIM 300KG swing gate operator kit, supporting up to 300-350 kg weight per gate leaf. Operates on dual 24VDC motors for soft start/stop, features an independent control panel for longevity, and supports obstacle detection anti-crush safety.',
-        image: 'assets/images/product/maxim_swing_300/main.jpg',
-        images: [
-            'assets/images/product/maxim_swing_300/main.jpg'
-        ],
-        features: [
-            'มอเตอร์ประตูรีโมท MAXIM รับน้ำหนักได้ไม่เกิน 350 Kg (ต่อบาน)',
-            'ระบบเปิด-ปิด อย่างนิ่มนวล soft start / soft stop เพื่อลดการกระแทก',
-            'แผงวงจรควบคุมแยกเป็นอิสระจากตัวมอเตอร์',
-            'รองรับระบบป้องกันประตูกระแทกชนสิ่งกีดขวาง',
-            'มีกุญแจเพื่อปลดล็อคมอเตอร์ เมื่อเกิดเหตุฉุกเฉิน หรือไฟฟ้าดับ'
-        ],
-        featuresEn: [
-            'Supports gates up to 350 kg per leaf',
-            'Soft start & soft stop system for smooth operation',
-            'Control panel is completely independent of the motor units',
-            'Supports anti-collision obstacle detection protection',
-            'Manual release key for emergency or power failure'
-        ],
-        specifications: {
-            'น้ำหนักประตูสูงสุด': '300-350 kg (ต่อบาน)',
-            'ความกว้างประตูสูงสุด': '2.5-3.5 m (ต่อบาน)',
-            'แหล่งจ่ายไฟ': '220V / 110V',
-            'กำลังมอเตอร์': '24VDC 60W x 2',
-            'ความเร็วรอบการหมุน': '100 rpm',
-            'ระยะยืดหดของแขนมอเตอร์ (Actuator Stroke)': '300-400 mm',
-            'อุณหภูมิแวดล้อมที่รองรับ': '-20°C ถึง 50°C',
-            'ระดับการป้องกันน้ำและฝุ่น': 'IP55',
-            'กระแสไฟฟ้า': '5A'
-        },
-        specificationsEn: {
-            'Max Gate Weight': '300-350 kg (per leaf)',
-            'Max Gate Width': '2.5-3.5 m (per leaf)',
-            'Power Supply': '220V / 110V',
-            'Motor Power': '24VDC 60W x 2',
-            'Rotational Speed': '100 rpm',
-            'Actuator Stroke': '300-400 mm',
-            'Operating Temperature': '-20°C to 50°C',
-            'IP Protection Rating': 'IP55',
-            'Current': '5A'
         }
     },
     {
@@ -332,7 +291,9 @@ const productsData = [
         fullDescEn: 'MAXIM 3500KG heavy-duty industrial sliding gate motor, designed for factories and large industrial projects. Supports up to 3,500 kg weight. Features an integrated cooling fan for continuous high-load operations and an independent control cabinet for maximum safety and stability.',
         image: 'assets/images/product/maxim_3500/main.jpg',
         images: [
-            'assets/images/product/maxim_3500/main.jpg'
+            'assets/images/product/maxim_3500/main.jpg',
+            'assets/images/product/maxim_3500/1.png',
+            'assets/images/product/maxim_3500/2.png'
         ],
         features: [
             'มอเตอร์ประตูรีโมท MAXIM รับน้ำหนักได้ไม่เกิน 3500 Kg',
@@ -363,6 +324,209 @@ const productsData = [
             'Rotational Speed': '1400 rpm',
             'Overload Cut-out': '130°C',
             'Operating Temperature': '-20°C to 100°C'
+        }
+    },
+    {
+        id: 'quiko_moovy',
+        isPopular: false,
+        name: 'Quiko MOOVY',
+        subtitle: 'รุ่น QK-M800 (Sliding Gate)',
+        subtitleEn: 'Model QK-M800 (Sliding Gate)',
+        shortDesc: 'มอเตอร์บานเลื่อนนำเข้าจากอิตาลี โครงสร้างอลูมิเนียม บรอนซ์ และเหล็ก แข็งแรงทนทาน รองรับน้ำหนักประตูสูงสุด 800 กิโลกรัม',
+        shortDescEn: 'Sliding gate operator imported from Italy. Built with robust aluminum, bronze, and steel. Supports gates up to 800 kg.',
+        fullDesc: 'มอเตอร์ประตูรีโมท Quiko รุ่น MOOVY (QK-M800) ผลิตและนำเข้าจากประเทศอิตาลี (Made in Italy) 100% เป็นระบบมอเตอร์บานเลื่อนอัตโนมัติ 230Vac เหมาะสำหรับบ้านพักอาศัยทั่วไปและกึ่งอุตสาหกรรม รองรับน้ำหนักประตูสูงสุด 800 กิโลกรัม ตัวเครื่องประกอบขึ้นจากวัสดุโลหะความทนทานสูง เช่น อลูมิเนียม บรอนซ์ และเหล็ก เพื่ออายุการใช้งานที่ยาวนาน ชุดเกียร์หล่อลื่นภายในด้วยจาระบีถาวรช่วยลดความร้อนและลดการสึกหรอ พร้อมระบบปลดล็อคด้วยกุญแจไขปลดล็อคด้านหน้าเมื่อระบบไฟฟ้าดับ',
+        fullDescEn: 'Quiko MOOVY (QK-M800) sliding gate operator, 100% manufactured and imported from Italy. Designed as a high-reliability 230Vac sliding gate opener, ideal for residential and light commercial gates up to 800 kg. Constructed with heavy-duty materials including aluminum, bronze, and steel. Features permanent grease lubrication inside the reducer to minimize friction and wear, and a frontal manual release key system for power outages.',
+        image: 'assets/images/product/quiko_moovy/main.jpg',
+        images: [
+            'assets/images/product/quiko_moovy/main.jpg',
+            'assets/images/product/quiko_moovy/1.jpg',
+            'assets/images/product/quiko_moovy/2.jpg',
+            'assets/images/product/quiko_moovy/3.jpg',
+            'assets/images/product/quiko_moovy/4.jpg'
+        ],
+        features: [
+            'ผลิตและนำเข้าจากประเทศอิตาลี (Made in Italy) 100%',
+            'ออกแบบมาสำหรับประตูบานเลื่อนขนาดกลางและขนาดใหญ่ รองรับน้ำหนักสูงสุด 800 kg',
+            'โครงสร้างทำจากวัสดุอลูมิเนียม บรอนซ์ และเหล็ก แข็งแรงและทนทานสูง',
+            'ระบบเกียร์ขับเคลื่อนลดการสึกหรอด้วยการหล่อลื่นด้วยจาระบีถาวร (Permanent Grease)',
+            'ก้านปลดล็อคมอเตอร์ด้านหน้าตัวเครื่องพร้อมกุญแจ เพื่อความสะดวกเมื่อไฟฟ้าดับ',
+            'บอร์ดควบคุม 230Vac ประสิทธิภาพสูง ทำงานร่วมกับระบบความปลอดภัย'
+        ],
+        featuresEn: [
+            '100% Manufactured and imported from Italy (Made in Italy)',
+            'Designed for medium to large sliding gates, supporting up to 800 kg',
+            'Built with highly robust housing constructed of aluminum, bronze, and steel',
+            'Internal gear reducer lubricated with permanent grease to minimize maintenance',
+            'Frontal manual release lever with key for easy manual operation during power failures',
+            'High performance 230Vac control board'
+        ],
+        specifications: {
+            'รุ่นสินค้า': 'QK-M800',
+            'น้ำหนักประตูสูงสุด': '800 kg',
+            'แหล่งจ่ายไฟ': '230 VAC 50/60Hz',
+            'กำลังมอเตอร์': '270W',
+            'กระแสไฟฟ้าใช้งาน': '1.3 A',
+            'ตัวเก็บประจุ (Capacitor)': '16 μF',
+            'ระดับการป้องกันน้ำและฝุ่น': 'IP54',
+            'ความเร็วในการเปิด-ปิด': '12 เมตร/นาที',
+            'อัตราการทำงาน (Working Cycle)': '50%',
+            'ระดับความเป็นฉนวน': 'Class F',
+            'ระบบตัดการทำงานเมื่อร้อนเกิน': '140°C',
+            'น้ำหนักตัวเครื่อง': '12 kg'
+        },
+        specificationsEn: {
+            'Model': 'QK-M800',
+            'Max Gate Weight': '800 kg',
+            'Power Supply': '230 VAC 50/60Hz',
+            'Motor Power': '270W',
+            'Absorbed Current': '1.3 A',
+            'Capacitor': '16 μF',
+            'IP Protection Rating': 'IP54',
+            'Opening/Closing Speed': '12 m/min',
+            'Working Cycle': '50%',
+            'Insulation Class': 'Class F',
+            'Overload Cut-out': '140°C',
+            'Motor Weight': '12 kg'
+        }
+    },
+    {
+        id: 'quiko_hydro',
+        isPopular: false,
+        name: 'Quiko HYDRO',
+        subtitle: 'รุ่น H400BAC (Swing Gate)',
+        subtitleEn: 'Model H400BAC (Swing Gate)',
+        shortDesc: 'มอเตอร์บานสวิงระบบไฮดรอลิกนำเข้าจากอิตาลี สำหรับใช้งานทั่วไปและงานหนักพิเศษ รองรับประตูยาวสูงสุด 6 เมตร',
+        shortDescEn: 'Hydraulic swing gate operator imported from Italy for residential and intensive use. Supports leaf lengths up to 6m.',
+        fullDesc: 'มอเตอร์บานสวิงระบบไฮดรอลิก Quiko รุ่น HYDRO (QK-H400BAC) ผลิตและนำเข้าจากประเทศอิตาลี (Made in Italy) 100% ออกแบบมาเพื่อการใช้งานหนัก (Intensive Use) และบานประตูสวิงขนาดใหญ่พิเศษ รองรับความกว้างประตูสูงสุด 6 เมตรต่อบาน โดดเด่นด้วยระบบไฮดรอลิกที่ใช้น้ำมันหล่อลื่นชิ้นส่วนภายในทั้งหมด ช่วยยืดอายุการใช้งานยาวนานและระบายความร้อนได้ดีเยี่ยม ทำงานร่วมกับระบบชะลอความเร็วขณะปิด (Hydraulic Slow Down) และระบบความปลอดภัยในการปรับแรงผลักเปิด-ปิดที่แยกอิสระจากกันด้วยวาล์วปรับแรงดัน',
+        fullDescEn: 'Quiko HYDRO (QK-H400BAC) hydraulic swing gate operator, 100% manufactured and imported from Italy. Designed for residential and intensive heavy-duty use on large swing gates up to 6m per leaf. Featuring internal oil-bath lubrication for all mechanical components to guarantee top-tier lifespan. Equipped with hydraulic slow-down on closing and independent thrust adjustment valves for opening and closing safety.',
+        image: 'assets/images/product/quiko_hydro/main.jpg',
+        images: [
+            'assets/images/product/quiko_hydro/main.jpg',
+            'assets/images/product/quiko_hydro/1.jpg',
+            'assets/images/product/quiko_hydro/2.jpg',
+            'assets/images/product/quiko_hydro/5.jpg',
+            'assets/images/product/quiko_hydro/6.jpg',
+            'assets/images/product/quiko_hydro/3.jpg',
+            'assets/images/product/quiko_hydro/4.jpg',
+            'assets/images/product/quiko_hydro/7.jpg',
+            'assets/images/product/quiko_hydro/8.jpg'
+        ],
+        features: [
+            'ผลิตและนำเข้าจากประเทศอิตาลี (Made in Italy) 100%',
+            'ออกแบบสำหรับประตูบานสวิงขนาดใหญ่พิเศษ รองรับความกว้างบานสูงสุดถึง 6 เมตร',
+            'ระบบกลไกไฮดรอลิกแช่ในน้ำมันหล่อลื่นภายในทั้งหมด ทนทานและระบายความร้อนยอดเยี่ยม',
+            'อัตราการทำงานสูงถึง 80% (Working Cycle 80%) รองรับการใช้งานต่อเนื่องและหนักหน่วง',
+            'ระบบปรับแรงผลักแบบละเอียดแยกอิสระ (Force adjustment valves) สำหรับช่วงเปิดและปิด',
+            'ระบบชะลอความเร็วขณะปิด (Hydraulic Slow Down) เพื่อลดการกระแทกและเสียงรบกวน',
+            'ก้านปลดล็อคมอเตอร์ด้วยกุญแจยามฉุกเฉินหรือไฟฟ้าดับ ด้านหน้าตัวเครื่อง'
+        ],
+        featuresEn: [
+            '100% Manufactured and imported from Italy (Made in Italy)',
+            'Designed for large swing gates, supporting leaf lengths up to 6m',
+            'Hydraulic system with internal oil lubrication for maximum durability and cooling',
+            'High working cycle of 80% for residential and intensive use',
+            'Independent force adjustment valves for opening and closing safety',
+            'Hydraulic slow-down system during closing for smooth operation',
+            'Manual key release system for power outages or emergencies'
+        ],
+        specifications: {
+            'รุ่นสินค้า': 'QK-H400BAC',
+            'น้ำหนักประตูสูงสุด': '1100 kg (ต่อบานที่ขนาด 2 ม.) / 600 kg (ต่อบานที่ขนาด 6 ม.)',
+            'ความกว้างประตูสูงสุด': '6 m (ต่อบาน)',
+            'แหล่งจ่ายไฟ': '230 VAC 50/60Hz',
+            'กำลังมอเตอร์': '250W',
+            'กระแสไฟฟ้าใช้งาน': '1 A',
+            'ระดับการป้องกันน้ำและฝุ่น': 'IP55',
+            'ความเร็วลูกสูบ': '1.3 cm/sec',
+            'ระยะชักของลูกสูบ (Stroke)': '390 mm',
+            'อัตราการทำงาน (Working Cycle)': '80%',
+            'ระบบตัดการทำงานเมื่อร้อนเกิน': '120°C',
+            'น้ำหนักตัวเครื่อง': '10 kg',
+            'ขนาดตัวเครื่อง (A/B/C)': '1330 / 825 / 390 mm'
+        },
+        specificationsEn: {
+            'Model': 'QK-H400BAC',
+            'Max Gate Weight': '1100 kg (per leaf at 2m) / 600 kg (per leaf at 6m)',
+            'Max Leaf Length': '6 m (per leaf)',
+            'Power Supply': '230 VAC 50/60Hz',
+            'Motor Power': '250W',
+            'Absorbed Current': '1 A',
+            'IP Protection Rating': 'IP55',
+            'Cylinder Speed': '1.3 cm/sec',
+            'Cylinder Stroke': '390 mm',
+            'Working Cycle': '80%',
+            'Overload Cut-out': '120°C',
+            'Motor Weight': '10 kg',
+            'Dimensions (A/B/C)': '1330 / 825 / 390 mm'
+        }
+    },
+    {
+        id: 'quiko_rotello',
+        isPopular: false,
+        name: 'Quiko ROTELLO',
+        subtitle: 'รุ่น QK-R400 (Swing Gate)',
+        subtitleEn: 'Model QK-R400 (Swing Gate)',
+        shortDesc: 'มอเตอร์บานสวิงนำเข้าจากอิตาลี โครงสร้างอลูมิเนียม เฟืองเหล็กและบรอนซ์ ทนทาน เงียบเป็นพิเศษ รองรับยาวสูงสุด 4.5 เมตร',
+        shortDescEn: 'Electromechanical swing gate operator imported from Italy. aluminum body. Supports up to 4.5m leaf length.',
+        fullDesc: 'มอเตอร์ประตูรีโมท Quiko รุ่น ROTELLO (QK-R400) นำเข้าจากประเทศอิตาลี (Made in Italy) 100% เป็นมอเตอร์บานสวิงประเภท Electromechanical ที่ผ่านการออกแบบอย่างประณีตและติดตั้งง่าย รองรับประตูบานสวิงยาวสูงสุด 4.5 เมตรต่อบาน (และรับน้ำหนักสูงสุด 900 กิโลกรัมต่อบานที่ขนาด 2 เมตร) ตัวบอดี้ทำจากอลูมิเนียมหล่อขึ้นรูปเคลือบพ่นสีฝุ่นอย่างดี ชิ้นส่วนกลไกภายในทำจากเหล็กกล้าและบรอนซ์คุณภาพสูง แข็งแกร่งทนทานต่อการทำงานหนัก ทำงานได้อย่างเงียบสนิท ไม่ต้องบำรุงรักษาตลอดการใช้งาน และมาพร้อมระบบปลดล็อคด้วยกุญแจแบบไขปลดล็อคด้านข้างตัวเครื่องเมื่อเกิดเหตุไฟฟ้าดับ',
+        fullDescEn: 'Quiko ROTELLO (QK-R400) electromechanical swing gate operator, (Made in Italy) 100% manufactured and imported from Italy. Designed to satisfy a variety of residential and intensive swing gate automations, supporting gates up to 4.5m per leaf. Constructed with a die-cast powder-painted aluminum body, and internal mechanisms made of ultra-resistant steel and bronze to ensure a silent, long-lasting, and maintenance-free lifecycle. Comes with a secure key-operated manual release system for power outages.',
+        image: 'assets/images/product/quiko_rotello/main.jpg',
+        images: [
+            'assets/images/product/quiko_rotello/main.jpg',
+            'assets/images/product/quiko_rotello/3.jpg',
+            'assets/images/product/quiko_rotello/2.jpg',
+            'assets/images/product/quiko_rotello/4.jpg',
+            'assets/images/product/quiko_rotello/1.jpg',
+            'assets/images/product/quiko_rotello/5.jpg',
+            'assets/images/product/quiko_rotello/6.jpg'
+        ],
+        features: [
+            'ผลิตและนำเข้าจากประเทศอิตาลี (Made in Italy) 100%',
+            'รองรับประตูกว้างสูงสุด 4.5 เมตรต่อบาน (น้ำหนักสูงสุด 900 kg ที่ความกว้าง 2 เมตร)',
+            'โครงสร้างบอดี้อลูมิเนียมหล่อขึ้นรูปพ่นสีฝุ่นอย่างดี (Die-cast powder painted aluminium body)',
+            'เฟืองเหล็กกล้าและบรอนซ์ภายในมีความทนทานสูง (Ultra-resistant steel and bronze mechanisms)',
+            'ระบบการทำงานที่เงียบเป็นพิเศษและไม่ต้องบำรุงรักษาตลอดอายุการใช้งาน (Maintenance free)',
+            'มีระบบปลดล็อคด้านข้างด้วยกุญแจเพื่อควบคุมประตูด้วยมือในกรณีฉุกเฉินหรือไฟฟ้าดับ'
+        ],
+        featuresEn: [
+            '100% Manufactured and imported from Italy (Made in Italy)',
+            'Supports leaf lengths up to 4.5m (up to 900kg leaf weight at 2m)',
+            'Sturdy housing constructed of die-cast powder-coated aluminum',
+            'Internal mechanisms made of ultra-resistant steel and bronze',
+            'Quiet operation and maintenance-free design',
+            'Side-mounted manual key release system for power outages'
+        ],
+        specifications: {
+            'รุ่นสินค้า': 'QK-R400',
+            'น้ำหนักประตูสูงสุด': '900 kg (ต่อบานที่ขนาด 2 ม.) / 400 kg (ต่อบานที่ขนาด 4.5 ม.)',
+            'ความกว้างประตูสูงสุด': '4.5 m (ต่อบาน)',
+            'แหล่งจ่ายไฟ': '230 VAC 50/60Hz',
+            'กำลังมอเตอร์': '320W',
+            'กระแสไฟฟ้าใช้งาน': '0.9 - 1.4 A',
+            'ตัวเก็บประจุ (Capacitor)': '10 μF',
+            'ระดับการป้องกันน้ำและฝุ่น': 'IP54',
+            'ระยะชักตัวแขนมอเตอร์': '300 mm',
+            'แรงดึง-ดันสูงสุด (Max Thrust)': '3000 N',
+            'เวลาในการเปิด (90 องศา)': '18 วินาที',
+            'อัตราการทำงาน (Working Cycle)': '50%',
+            'ระบบตัดการทำงานเมื่อร้อนเกิน': '140°C',
+            'น้ำหนักตัวเครื่อง': '9 kg'
+        },
+        specificationsEn: {
+            'Model': 'QK-R400',
+            'Max Gate Weight': '900 kg (per leaf at 2m) / 400 kg (per leaf at 4.5m)',
+            'Max Leaf Length': '4.5 m (per leaf)',
+            'Power Supply': '230 VAC 50/60Hz',
+            'Motor Power': '320W',
+            'Absorbed Current': '0.9 - 1.4 A',
+            'Capacitor': '10 μF',
+            'IP Protection Rating': 'IP54',
+            'Cylinder Stroke': '300 mm',
+            'Max Thrust': '3000 N',
+            'Opening Time': '18 sec',
+            'Working Cycle': '50%',
+            'Overload Cut-out': '140°C',
+            'Motor Weight': '9 kg'
         }
     }
 ];
