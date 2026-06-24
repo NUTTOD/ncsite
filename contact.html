@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ติดต่อเรา | NC Centergate</title>
-    <meta name="description" content="ติดต่อสอบถามข้อมูลเพิ่มเติม ขอใบเสนอราคา หรือแจ้งซ่อมบำรุงรักษาประตูรีโมทอัตโนมัติ บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด ยินดีให้บริการช่วยเหลือภายใน 24 ชม.">
-    <meta name="keywords" content="ติดต่อ NC Centergate, ขอใบเสนอราคาประตูรีโมท, แจ้งซ่อมประตูรีโมท, แผนที่ NC Centergate">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <title>ติดต่อเรา สอบถามราคาประตูรีโมท แจ้งซ่อมติดตั้ง | NC Centergate</title>
+    <meta name="description" content="ติดต่อ บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด สอบถามข้อมูลสินค้าประตูรีโมท ขอใบเสนอราคาติดตั้ง หรือแจ้งซ่อมประตูเลื่อนอัตโนมัติ ยินดีให้บริการอย่างรวดเร็ว">
+    <meta name="keywords" content="ติดต่อประตูรีโมท, ราคาประตูเลื่อนอัตโนมัติ, แจ้งซ่อมประตูรีโมทมัยลาภ, ประเสริฐมนูกิจ, ประตูอัตโนมัติกรุงเทพ">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('lang') === 'en') {
+            document.body.classList.add('lang-en');
+        } else {
+            document.body.classList.add('lang-th');
+        }
+    </script>
     <header class="site-header">
         <div class="container header-container">
             <div class="logo">
@@ -17,40 +25,69 @@
                     <img src="assets/images/home/nccentergate-logo.png" alt="NC Centergate Logo">
                 </a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">หน้าแรก</a></li>
-                    <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
-                    <li><a href="index.html#products">สินค้า</a></li>
-                    <li><a href="index.html#services">บริการ</a></li>
-                    <li><a href="index.html#reviews">ผลงาน</a></li>
-                    <li><a href="index.html#contact" class="active">ติดต่อเรา</a></li>
-                </ul>
-            </nav>
+            <div class="header-right" style="display: flex; align-items: center; gap: 20px;">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html"><span class="lang-th">หน้าแรก</span><span class="lang-en">Home</span></a></li>
+                        <li><a href="index.html#about"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en">About Us</span></a></li>
+                        <li><a href="index.html#products"><span class="lang-th">สินค้า</span><span class="lang-en">Products</span></a></li>
+                        <li><a href="index.html#services"><span class="lang-th">บริการ</span><span class="lang-en">Services</span></a></li>
+                        <li><a href="index.html#reviews"><span class="lang-th">ผลงาน</span><span class="lang-en">Gallery</span></a></li>
+                        <li><a href="index.html#contact" class="active"><span class="lang-th">ติดต่อเรา</span><span class="lang-en">Contact Us</span></a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <button onclick="toggleLanguage()" class="btn-lang" aria-label="Toggle Language">
+                        🌐 <span class="lang-th">EN</span><span class="lang-en">TH</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main class="py-5">
+    <main class="page-content py-5">
         <div class="container">
             <div class="section-header text-center mb-5">
-                <h1 class="section-title">ติดต่อเรา / แจ้งซ่อม</h1>
-                <p>สอบถามข้อมูล ประเมินราคา หรือแจ้งปัญหาการใช้งาน เรายินดีให้บริการทุกช่องทางครับ</p>
+                <h1 class="section-title">
+                    <span class="lang-th">ติดต่อเรา / แจ้งซ่อม</span>
+                    <span class="lang-en">Contact Us / Repair Service</span>
+                </h1>
+                <p>
+                    <span class="lang-th">สอบถามข้อมูล ประเมินราคา หรือแจ้งปัญหาการใช้งาน เรายินดีให้บริการทุกช่องทางครับ</span>
+                    <span class="lang-en">Inquire information, request a price estimation, or report system issues. We are ready to help.</span>
+                </p>
                 <div class="title-underline"></div>
             </div>
 
             <div class="contact-wrapper">
                 <div class="contact-info-block" style="background-color: #fff; color: var(--text-main); border: 1px solid var(--border-color);">
-                    <h2 style="color: var(--primary-color);">ข้อมูลการติดต่อ</h2>
-                    <p style="margin-bottom: 30px;">บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด</p>
+                    <h2 style="color: var(--primary-color);">
+                        <span class="lang-th">ข้อมูลการติดต่อ</span>
+                        <span class="lang-en">Contact Information</span>
+                    </h2>
+                    <p style="margin-bottom: 30px;">
+                        <span class="lang-th">บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด</span>
+                        <span class="lang-en">NC Centergate Co., Ltd.</span>
+                    </p>
                     <ul class="contact-details" style="margin-bottom: 30px;">
-                        <li style="margin-bottom: 15px;"><strong>ที่อยู่:</strong> 77/143 ซอย 1 หมู่บ้านเฟรนชิฟ ถนนประเสริฐมนูกิจ 29 แยก 2 (ซอยมัยลาภ) แขวงลาดพร้าว เขตลาดพร้าว กรุงเทพมหานคร 10230</li>
-                        <li style="margin-bottom: 10px;"><strong>โทรศัพท์พื้นฐาน:</strong> <a href="tel:025784585">02-578-4585</a></li>
-                        <li style="margin-bottom: 10px;"><strong>มือถือ:</strong> <a href="tel:0813313029">081-331-3029</a>, <a href="tel:0845695610">084-569-5610</a></li>
+                        <li style="margin-bottom: 15px;">
+                            <strong><span class="lang-th">ที่อยู่:</span><span class="lang-en">Address:</span></strong> 
+                            <span class="lang-th">77/143 ซอย 1 หมู่บ้านเฟรนชิฟ ถนนประเสริฐมนูกิจ 29 แยก 2 (ซอยมัยลาภ) แขวงลาดพร้าว เขตลาดพร้าว กรุงเทพมหานคร 10230</span>
+                            <span class="lang-en">77/143 Soi 1, Friendship Village, Prasert-Manukitch 29 Alley, Intersection 2 (Soi Maiyalap), Lat Phrao, Lat Phrao District, Bangkok 10230</span>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong><span class="lang-th">โทรศัพท์พื้นฐาน:</span><span class="lang-en">Landline:</span></strong> 
+                            <a href="tel:025784585">02-578-4585</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong><span class="lang-th">มือถือ:</span><span class="lang-en">Mobile:</span></strong> 
+                            <a href="tel:0813313029">081-331-3029</a>, <a href="tel:0845695610">084-569-5610</a>
+                        </li>
                         <li style="margin-bottom: 10px;"><strong>Line ID:</strong> <a href="https://line.me/R/ti/p/@740kjpdf" target="_blank" style="color: #06C755; font-weight: 600;">@740kjpdf (NC Center Gate)</a></li>
                         <li style="margin-bottom: 10px;"><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100091524721744" target="_blank">NC Centergate</a></li>
                         <li style="margin-bottom: 10px;"><strong>อีเมล:</strong> <a href="mailto:nccentergate@hotmail.com">nccentergate@hotmail.com</a></li>
@@ -59,38 +96,73 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.524584614138!2d100.621453375834!3d13.83758699532911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d7df9d61081%3A0x88f63857319c7f66!2z4Lia4Lij4Li04Lip4Lix4LiXIE5DIENFTlRFUiBHQVRF!5e0!3m2!1sth!2sth!4v1718712000000!5m2!1sth!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
+                
                 <div class="contact-form-block">
                     <form action="https://formspree.io/f/xkoaldww" method="POST" class="custom-form" style="background-color: var(--bg-main); padding: 30px; border-radius: 12px; border: 1px solid var(--border-color);">
-                        <h3 style="margin-bottom: 10px;">ส่งคำขอใบเสนอราคา / แจ้งซ่อม</h3>
-                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 25px;">กรอกข้อมูลเพื่อให้เจ้าหน้าที่ติดต่อกลับ (ข้อมูลจะส่งเข้าอีเมลโดยตรง)</p>
+                        <h3 style="margin-bottom: 10px;">
+                            <span class="lang-th">ส่งคำขอใบเสนอราคา / แจ้งซ่อม</span>
+                            <span class="lang-en">Request a Quote / Report Repair</span>
+                        </h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 25px;">
+                            <span class="lang-th">กรอกข้อมูลเพื่อให้เจ้าหน้าที่ติดต่อกลับ (ข้อมูลจะส่งเข้าอีเมลโดยตรง)</span>
+                            <span class="lang-en">Please fill in the details for our team to contact you back (sent directly to email).</span>
+                        </p>
+                        
                         <div class="form-group">
-                            <label for="name">ชื่อ-นามสกุล *</label>
+                            <label for="name">
+                                <span class="lang-th">ชื่อ-นามสกุล *</span>
+                                <span class="lang-en">Full Name *</span>
+                            </label>
                             <input type="text" id="name" name="name" required placeholder="กรอกชื่อของคุณ">
                         </div>
                         <div class="form-group">
-                            <label for="phone">เบอร์โทรศัพท์ *</label>
+                            <label for="phone">
+                                <span class="lang-th">เบอร์โทรศัพท์ *</span>
+                                <span class="lang-en">Phone Number *</span>
+                            </label>
                             <input type="tel" id="phone" name="phone" required placeholder="กรอกเบอร์โทรศัพท์">
                         </div>
                         <div class="form-group">
-                            <label for="service_type">เรื่องที่ต้องการติดต่อ</label>
+                            <label for="email">
+                                <span class="lang-th">อีเมล</span>
+                                <span class="lang-en">Email Address</span>
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="กรอกอีเมลของคุณ">
+                        </div>
+                        <div class="form-group">
+                            <label for="service_type">
+                                <span class="lang-th">เรื่องที่ต้องการติดต่อ</span>
+                                <span class="lang-en">Subject of Inquiry</span>
+                            </label>
                             <select id="service_type" name="service_type">
-                                <option value="ติดตั้งใหม่">สนใจติดตั้งประตูใหม่ (ขอใบเสนอราคา)</option>
-                                <option value="แจ้งซ่อม">แจ้งซ่อมมอเตอร์ / บำรุงรักษา</option>
-                                <option value="ซื้ออะไหล่">สอบถามอะไหล่ / รีโมทเพิ่มเติม</option>
-                                <option value="อื่นๆ">อื่นๆ</option>
+                                <option value="quotation">
+                                    <span class="lang-th">ขอใบเสนอราคาติดตั้งใหม่</span>
+                                    <span class="lang-en">Request installation quotation</span>
+                                </option>
+                                <option value="repair">
+                                    <span class="lang-th">แจ้งซ่อมประตูรีโมทมีปัญหา</span>
+                                    <span class="lang-en">Report remote gate repair</span>
+                                </option>
+                                <option value="general">
+                                    <span class="lang-th">สอบถามข้อมูลทั่วไป / อะไหล่</span>
+                                    <span class="lang-en">General inquiry / Spare parts</span>
+                                </option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">รายละเอียดเพิ่มเติม (ระบุรุ่นมอเตอร์ หรืออาการเสีย)</label>
-                            <textarea id="message" name="message" rows="6" placeholder="ระบุรายละเอียดที่ต้องการให้เราช่วยดูแล..."></textarea>
+                            <label for="message">
+                                <span class="lang-th">รายละเอียดเพิ่มเติม / อาการเสีย</span>
+                                <span class="lang-en">Message Details / Issue Description</span>
+                            </label>
+                            <textarea id="message" name="message" rows="4" placeholder="ระบุรุ่นมอเตอร์ หรืออาการเสียคร่าวๆ"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 15px;">ส่งข้อมูลให้เจ้าหน้าที่</button>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">
+                            <span class="lang-th">ส่งข้อความติดต่อ</span>
+                            <span class="lang-en">Submit Inquiry</span>
+                        </button>
                     </form>
                 </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="index.html" class="btn btn-outline">กลับสู่หน้าแรก</a>
             </div>
         </div>
     </main>

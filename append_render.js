@@ -4,9 +4,8 @@ let content = fs.readFileSync(path, 'utf8');
 
 const compareLogic = `
 
-// ฟังก์ชันสร้างและจัดการ Modal เปรียบเทียบสเปค
 window.createCompareModal = function(product) {
-    // หาคีย์ทั้งหมดที่มีในสเปคของทุกรุ่น (เพื่อสร้างตาราง)
+    
     const allSpecKeys = new Set();
     product.variants.forEach(v => {
         if(v.specifications) {
@@ -53,10 +52,8 @@ window.createCompareModal = function(product) {
         </div>
     \`;
 
-    // แทรก Modal ลงใน body
     document.body.insertAdjacentHTML('beforeend', modalHtml);
-    
-    // ปิด Modal เมื่อคลิกพื้นที่ว่าง
+
     document.getElementById('compare-modal').addEventListener('click', function(e) {
         if(e.target === this) {
             closeCompareModal();
@@ -68,7 +65,7 @@ window.openCompareModal = function() {
     const modal = document.getElementById('compare-modal');
     if (modal) {
         modal.classList.add('active');
-        document.body.style.overflow = 'hidden'; // ป้องกันการเลื่อนหน้าจอ
+        document.body.style.overflow = 'hidden'; 
     }
 };
 

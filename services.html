@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บริการของเรา | NC Centergate</title>
-    <meta name="description" content="บริการติดตั้ง ซ่อมแซม และจำหน่ายอะไหล่แท้มอเตอร์ประตูรีโมทอัตโนมัติบานเลื่อนและบานสวิงทุกแบรนด์ รวดเร็ว ทันใจ ดำเนินการโดยทีมช่างผู้ชำนาญการ">
-    <meta name="keywords" content="บริการติดตั้งประตูรีโมท, ซ่อมมอเตอร์ประตู, อะไหล่แท้ประตูรีโมท, บริการแจ้งซ่อมประตูรีโมท">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <title>ติดตั้ง ซ่อมประตูรีโมท ประตูเลื่อนอัตโนมัติครบวงจร | NC Centergate</title>
+    <meta name="description" content="บริการติดตั้ง ซ่อมประตูรีโมท และซ่อมมอเตอร์ประตูเลื่อนอัตโนมัติ ทุกรุ่น ทุกยี่ห้อ พร้อมจำหน่ายอะไหล่แท้ โดยทีมช่างประสบการณ์กว่า 20 ปี">
+    <meta name="keywords" content="ติดตั้งประตูรีโมท, ซ่อมประตูรีโมท, ซ่อมประตูเลื่อนอัตโนมัติ, มอเตอร์ประตูรีโมท, อะไหล่ประตูรีโมท, บริการซ่อมประตูรีโมท">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('lang') === 'en') {
+            document.body.classList.add('lang-en');
+        } else {
+            document.body.classList.add('lang-th');
+        }
+    </script>
     <header class="site-header">
         <div class="container header-container">
             <div class="logo">
@@ -17,29 +25,42 @@
                     <img src="assets/images/home/nccentergate-logo.png" alt="NC Centergate Logo">
                 </a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">หน้าแรก</a></li>
-                    <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
-                    <li><a href="index.html#products">สินค้า</a></li>
-                    <li><a href="index.html#services" class="active">บริการ</a></li>
-                    <li><a href="index.html#reviews">ผลงาน</a></li>
-                    <li><a href="index.html#contact">ติดต่อเรา</a></li>
-                </ul>
-            </nav>
+            <div class="header-right" style="display: flex; align-items: center; gap: 20px;">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html"><span class="lang-th">หน้าแรก</span><span class="lang-en">Home</span></a></li>
+                        <li><a href="index.html#about"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en">About Us</span></a></li>
+                        <li><a href="index.html#products"><span class="lang-th">สินค้า</span><span class="lang-en">Products</span></a></li>
+                        <li><a href="index.html#services" class="active"><span class="lang-th">บริการ</span><span class="lang-en">Services</span></a></li>
+                        <li><a href="index.html#reviews"><span class="lang-th">ผลงาน</span><span class="lang-en">Gallery</span></a></li>
+                        <li><a href="index.html#contact"><span class="lang-th">ติดต่อเรา</span><span class="lang-en">Contact Us</span></a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <button onclick="toggleLanguage()" class="btn-lang" aria-label="Toggle Language">
+                        🌐 <span class="lang-th">EN</span><span class="lang-en">TH</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <main class="page-content py-5">
         <div class="container">
             <div class="section-header text-center mb-5">
-                <h1 class="section-title">บริการของเรา</h1>
-                <p>บริการดูแลระบบประตูรีโมทอัตโนมัติครบวงจร โดยทีมงานช่างมืออาชีพที่มากประสบการณ์กว่า 20 ปี</p>
+                <h1 class="section-title">
+                    <span class="lang-th">บริการของเรา</span>
+                    <span class="lang-en">Our Services</span>
+                </h1>
+                <p>
+                    <span class="lang-th">บริการดูแลระบบประตูรีโมทอัตโนมัติครบวงจร โดยทีมงานช่างมืออาชีพที่มากประสบการณ์กว่า 20 ปี</span>
+                    <span class="lang-en">Comprehensive automatic remote gate services by our professional technician team with over 20 years of experience.</span>
+                </p>
                 <div class="title-underline"></div>
             </div>
 
@@ -48,15 +69,33 @@
                 <div class="card service-detail-card" style="background-color: #fff; border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
                     <div style="background-color: var(--primary-color); color: #fff; padding: 30px; text-align: center;">
                         <span style="font-size: 3rem;">🛠️</span>
-                        <h2 style="font-size: 1.5rem; margin-top: 15px;">บริการติดตั้งมาตรฐาน</h2>
+                        <h2 style="font-size: 1.5rem; margin-top: 15px;">
+                            <span class="lang-th">บริการติดตั้งมาตรฐาน</span>
+                            <span class="lang-en">Standard Installation</span>
+                        </h2>
                     </div>
                     <div style="padding: 30px; flex-grow: 1;">
-                        <p style="color: var(--text-main); margin-bottom: 20px; font-weight: 500;">บริการติดตั้งมอเตอร์ประตูรีโมทอัจฉริยะ สำหรับบ้านพักอาศัย โครงการหมู่บ้าน และโรงงานอุตสาหกรรม</p>
+                        <p style="color: var(--text-main); margin-bottom: 20px; font-weight: 500;">
+                            <span class="lang-th">บริการติดตั้งมอเตอร์ประตูรีโมทอัจฉริยะ สำหรับบ้านพักอาศัย โครงการหมู่บ้าน และโรงงานอุตสาหกรรม</span>
+                            <span class="lang-en">Professional remote gate motor installation for residential homes, housing estates, and industrial factories.</span>
+                        </p>
                         <ul style="padding-left: 20px; color: var(--text-muted); line-height: 1.8;">
-                            <li style="margin-bottom: 10px;">ติดตั้งได้มาตรฐาน เดินสายไฟร้อยท่อ PVC เรียบร้อยปลอดภัย</li>
-                            <li style="margin-bottom: 10px;">เซ็ตระบบมอเตอร์ บานเลื่อน (Sliding Gate) และบานสวิง (Swing Gate) ทุกรุ่น</li>
-                            <li style="margin-bottom: 10px;">ทดสอบการเปิด-ปิด คลัตช์ และเซ็นเซอร์ความปลอดภัยละเอียดทุกจุดก่อนส่งมอบ</li>
-                            <li style="margin-bottom: 10px;">มีช่างสอนการใช้กุญแจปลดล็อคฉุกเฉิน และวิธีการดูแลรักษาเบื้องต้น</li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">ติดตั้งได้มาตรฐาน เดินสายไฟร้อยท่อ PVC เรียบร้อยปลอดภัย</span>
+                                <span class="lang-en">Standardized installation, clean and safe PVC electrical pipe conduit wiring.</span>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">เซ็ตระบบมอเตอร์ บานเลื่อน (Sliding Gate) และบานสวิง (Swing Gate) ทุกรุ่น</span>
+                                <span class="lang-en">Full setup for all sliding and swing gate motor models.</span>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">ทดสอบการเปิด-ปิด คลัตช์ และเซ็นเซอร์ความปลอดภัยละเอียดทุกจุดก่อนส่งมอบ</span>
+                                <span class="lang-en">Thoroughly test opening, closing, clutch, and safety sensors before handover.</span>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">มีช่างสอนการใช้กุญแจปลดล็อคฉุกเฉิน และวิธีการดูแลรักษาเบื้องต้น</span>
+                                <span class="lang-en">Technicians teach you how to use emergency keys and handle basic maintenance.</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -65,15 +104,33 @@
                 <div class="card service-detail-card" style="background-color: #fff; border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
                     <div style="background-color: var(--accent-color); color: #fff; padding: 30px; text-align: center;">
                         <span style="font-size: 3rem;">⚙️</span>
-                        <h2 style="font-size: 1.5rem; margin-top: 15px;">ซ่อมแซมและบำรุงรักษา</h2>
+                        <h2 style="font-size: 1.5rem; margin-top: 15px;">
+                            <span class="lang-th">ซ่อมแซมและบำรุงรักษา</span>
+                            <span class="lang-en">Repair & Maintenance</span>
+                        </h2>
                     </div>
                     <div style="padding: 30px; flex-grow: 1;">
-                        <p style="color: var(--text-main); margin-bottom: 20px; font-weight: 500;">บริการตรวจเช็คและแก้ปัญหามอเตอร์ประตูรีโมทขัดข้อง ทุกแบรนด์ ทุกอาการเสีย</p>
+                        <p style="color: var(--text-main); margin-bottom: 20px; font-weight: 500;">
+                            <span class="lang-th">บริการตรวจเช็คและแก้ปัญหามอเตอร์ประตูรีโมทขัดข้อง ทุกแบรนด์ ทุกอาการเสีย</span>
+                            <span class="lang-en">Diagnostics and repair for automatic gate motor issues of all brands and problems.</span>
+                        </p>
                         <ul style="padding-left: 20px; color: var(--text-muted); line-height: 1.8;">
-                            <li style="margin-bottom: 10px;">ซ่อมมอเตอร์ไฟไม่เข้า, ประตูเลื่อนไม่สุด, เสียงดังผิดปกติ หรือประตูกดรีโมทไม่ทำงาน</li>
-                            <li style="margin-bottom: 10px;">ซ่อมบอร์ดวงจรควบคุมไหม้ หรือเสียหายจากไฟกระชากและแมลงรบกวน</li>
-                            <li style="margin-bottom: 10px;">ปรับตั้งศูนย์ล้อ รางระบาย และลูกล้อประคองประตูที่เสื่อมสภาพ</li>
-                            <li style="margin-bottom: 10px;">บริการตรวจเช็คสภาพรายปีสำหรับองค์กรและโครงการหมู่บ้าน</li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">ซ่อมมอเตอร์ไฟไม่เข้า, ประตูเลื่อนไม่สุด, เสียงดังผิดปกติ หรือประตูกดรีโมทไม่ทำงาน</span>
+                                <span class="lang-en">Fix motors with no power, incomplete sliding, unusual noises, or unresponsive remotes.</span>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">ซ่อมบอร์ดวงจรควบคุมไหม้ หรือเสียหายจากไฟกระชากและแมลงรบกวน</span>
+                                <span class="lang-en">Repair burned control boards or damage caused by power surges and pests.</span>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">ปรับตั้งศูนย์ล้อ รางระบาย และลูกล้อประคองประตูที่เสื่อมสภาพ</span>
+                                <span class="lang-en">Align gate wheels, drainage rails, and guide rollers that have worn out.</span>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">บริการตรวจเช็คสภาพรายปีสำหรับองค์กรและโครงการหมู่บ้าน</span>
+                                <span class="lang-en">Annual maintenance inspection services for commercial clients and housing projects.</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -82,15 +139,33 @@
                 <div class="card service-detail-card" style="background-color: #fff; border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
                     <div style="background-color: #333; color: #fff; padding: 30px; text-align: center;">
                         <span style="font-size: 3rem;">📦</span>
-                        <h2 style="font-size: 1.5rem; margin-top: 15px;">อะไหล่แท้และอัปเกรด</h2>
+                        <h2 style="font-size: 1.5rem; margin-top: 15px;">
+                            <span class="lang-th">อะไหล่แท้และอัปเกรด</span>
+                            <span class="lang-en">Genuine Parts & Upgrades</span>
+                        </h2>
                     </div>
                     <div style="padding: 30px; flex-grow: 1;">
-                        <p style="color: var(--text-main); margin-bottom: 20px; font-weight: 500;">จำหน่ายและเปลี่ยนอุปกรณ์เสริม อะไหล่แท้ตรงรุ่น เพื่อยกระดับความสะดวกและปลอดภัย</p>
+                        <p style="color: var(--text-main); margin-bottom: 20px; font-weight: 500;">
+                            <span class="lang-th">จำหน่ายและเปลี่ยนอุปกรณ์เสริม อะไหล่แท้ตรงรุ่น เพื่อยกระดับความสะดวกและปลอดภัย</span>
+                            <span class="lang-en">Distribution and replacement of genuine accessories and spare parts to upgrade comfort and safety.</span>
+                        </p>
                         <ul style="padding-left: 20px; color: var(--text-muted); line-height: 1.8;">
-                            <li style="margin-bottom: 10px;">จำหน่ายและตั้งค่ารีโมทคอนโทรลรุ่นกันน้ำและสัญญาณความถี่เสถียร</li>
-                            <li style="margin-bottom: 10px;">ติดตั้งระบบเซ็นเซอร์กันหนีบอินฟราเรด (Infrared Photo Cell) ป้องกันประตูกระแทก</li>
-                            <li style="margin-bottom: 10px;">ติดตั้งกล่องรับสัญญาณ WiFi/Bluetooth สั่งงานเปิด-ปิดผ่านมือถือได้อย่างสะดวก</li>
-                            <li style="margin-bottom: 10px;">เปลี่ยนเฟืองสะพานเหล็กทนทานสูง แผงบอร์ดอะไหล่แท้แบรนด์ MAXIM และ ALBANO</li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">จำหน่ายและตั้งค่ารีโมทคอนโทรลรุ่นกันน้ำและสัญญาณความถี่เสถียร</span>
+                                <span class="lang-en">Sell and program waterproof remote controllers with highly stable signal frequency.</span>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">ติดตั้งระบบเซ็นเซอร์กันหนีบอินฟราเรด (Infrared Photo Cell) ป้องกันประตูกระแทก</span>
+                                <span class="lang-en">Install infrared safety photocell sensors to prevent gate collision accidents.</span>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">ติดตั้งกล่องรับสัญญาณ WiFi/Bluetooth สั่งงานเปิด-ปิดผ่านมือถือได้อย่างสะดวก</span>
+                                <span class="lang-en">Install WiFi/Bluetooth receiver boxes for convenient smartphone-based control.</span>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <span class="lang-th">เปลี่ยนเฟืองสะพานเหล็กทนทานสูง แผงบอร์ดอะไหล่แท้แบรนด์ MAXIM และ ALBANO</span>
+                                <span class="lang-en">Replace heavy-duty steel gear racks and control boards for MAXIM and ALBANO.</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -98,11 +173,23 @@
 
             <!-- Call to Action -->
             <div style="background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); color: #fff; padding: 40px; border-radius: 16px; text-align: center; box-shadow: 0 10px 30px rgba(0, 146, 69, 0.2);">
-                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">ต้องการประเมินราคา ขอใบเสนอราคา หรือแจ้งซ่อมประตูรีโมท?</h3>
-                <p style="margin-bottom: 25px; font-size: 1.1rem; opacity: 0.9;">เราพร้อมให้บริการรวดเร็ว ภายใน 24 ชั่วโมง พร้อมให้คำปรึกษาปัญหาประตูกับช่างเทคนิคโดยตรง</p>
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">
+                    <span class="lang-th">ต้องการประเมินราคา ขอใบเสนอราคา หรือแจ้งซ่อมประตูรีโมท?</span>
+                    <span class="lang-en">Need a price estimation, formal quote, or automatic gate repair?</span>
+                </h3>
+                <p style="margin-bottom: 25px; font-size: 1.1rem; opacity: 0.9;">
+                    <span class="lang-th">เราพร้อมให้บริการรวดเร็ว ภายใน 24 ชั่วโมง พร้อมให้คำปรึกษาปัญหาประตูกับช่างเทคนิคโดยตรง</span>
+                    <span class="lang-en">We provide rapid service within 24 hours. Contact our technical team for a free consultation directly.</span>
+                </p>
                 <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                    <a href="index.html#contact" class="btn" style="background-color: #fff; color: var(--primary-color); font-weight: 600; padding: 12px 30px;">ติดต่อเรา / แจ้งด่วน</a>
-                    <a href="tel:0813313029" class="btn" style="border: 2px solid #fff; color: #fff; font-weight: 600; padding: 10px 30px;">โทร: 081-331-3029</a>
+                    <a href="index.html#contact" class="btn" style="background-color: #fff; color: var(--primary-color); font-weight: 600; padding: 12px 30px;">
+                        <span class="lang-th">ติดต่อเรา / แจ้งด่วน</span>
+                        <span class="lang-en">Contact Us / Fast Service</span>
+                    </a>
+                    <a href="tel:0813313029" class="btn" style="border: 2px solid #fff; color: #fff; font-weight: 600; padding: 10px 30px;">
+                        <span class="lang-th">โทร: 081-331-3029</span>
+                        <span class="lang-en">Call: 081-331-3029</span>
+                    </a>
                 </div>
             </div>
         </div>

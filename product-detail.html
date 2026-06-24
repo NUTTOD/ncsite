@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>รายละเอียดสินค้า | NC Centergate</title>
-    <meta name="description" content="ข้อมูลสเปคและรายละเอียดมอเตอร์ประตูรีโมทอัจฉริยะ คุณสมบัติเด่น และข้อมูลทางเทคนิคของแต่ละรุ่น เพื่อช่วยให้คุณเลือกสิ่งที่ดีที่สุดให้กับบ้านของคุณ">
-    <meta name="keywords" content="สเปคประตูรีโมท, รายละเอียดมอเตอร์ประตูอัตโนมัติ, ข้อมูลทางเทคนิคประตูรีโมท">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <title>สเปคและรายละเอียดมอเตอร์ประตูรีโมท ประตูเลื่อนอัตโนมัติ | NC Centergate</title>
+    <meta name="description" content="ข้อมูลสเปค รายละเอียด และคุณสมบัติเด่นของมอเตอร์ประตูรีโมท ประตูเลื่อนอัตโนมัติ รุ่น MAXIM, ALBANO, QUIKO ข้อมูลทางเทคนิคครบถ้วน">
+    <meta name="keywords" content="รายละเอียดประตูรีโมท, สเปคมอเตอร์ประตูอัตโนมัติ, มอเตอร์ประตูบานเลื่อน, ประตูอัตโนมัติ MAXIM, ประตูอัตโนมัติ ALBANO">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body id="top">
+    <script>
+        if (localStorage.getItem('lang') === 'en') {
+            document.body.classList.add('lang-en');
+        } else {
+            document.body.classList.add('lang-th');
+        }
+    </script>
     <header class="site-header">
         <div class="container header-container">
             <div class="logo">
@@ -17,40 +25,48 @@
                     <img src="assets/images/home/nccentergate-logo.png" alt="NC Centergate Logo">
                 </a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">หน้าแรก</a></li>
-                    <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
-                    <li><a href="products.html" class="active">สินค้า</a></li>
-                    <li><a href="index.html#services">บริการ</a></li>
-                    <li><a href="index.html#reviews">ผลงาน</a></li>
-                    <li><a href="index.html#contact">ติดต่อเรา</a></li>
-                </ul>
-            </nav>
+            <div class="header-right" style="display: flex; align-items: center; gap: 20px;">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html"><span class="lang-th">หน้าแรก</span><span class="lang-en">Home</span></a></li>
+                        <li><a href="index.html#about"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en">About Us</span></a></li>
+                        <li><a href="products.html" class="active"><span class="lang-th">สินค้า</span><span class="lang-en">Products</span></a></li>
+                        <li><a href="index.html#services"><span class="lang-th">บริการ</span><span class="lang-en">Services</span></a></li>
+                        <li><a href="index.html#reviews"><span class="lang-th">ผลงาน</span><span class="lang-en">Gallery</span></a></li>
+                        <li><a href="index.html#contact"><span class="lang-th">ติดต่อเรา</span><span class="lang-en">Contact Us</span></a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <button onclick="toggleLanguage()" class="btn-lang" aria-label="Toggle Language">
+                        🌐 <span class="lang-th">EN</span><span class="lang-en">TH</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
-        <!-- Breadcrumb / ย้อนกลับ -->
         <div class="breadcrumb-container">
             <div class="container">
                 <a href="products.html" class="btn-back">
-                    <span class="icon">&laquo;</span> กลับไปหน้าสินค้าทั้งหมด
+                    <span class="icon">&laquo;</span> 
+                    <span class="lang-th">กลับไปหน้าสินค้าทั้งหมด</span>
+                    <span class="lang-en">Back to All Products</span>
                 </a>
             </div>
         </div>
 
         <section class="section-padding">
             <div class="container">
-                <!-- ข้อมูลสินค้าจะถูกเรนเดอร์ลงใน Container นี้ด้วย JavaScript -->
                 <div id="product-detail-container">
                     <div class="text-center" style="padding: 50px 0;">
-                        <p>กำลังโหลดข้อมูลสินค้า...</p>
+                        <p class="lang-th">กำลังโหลดข้อมูลสินค้า...</p>
+                        <p class="lang-en">Loading product data...</p>
                     </div>
                 </div>
             </div>
@@ -59,7 +75,6 @@
 
     <site-footer></site-footer>
 
-    <!-- ไฟล์ JavaScript พื้นฐาน -->
     <script src="assets/js/product-data.js"></script>
     <script src="assets/js/product-render.js"></script>
     <script src="assets/js/main.js"></script>

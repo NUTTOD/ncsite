@@ -3,18 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NC Centergate | ผู้เชี่ยวชาญระบบประตูอัตโนมัติ</title>
-    <meta name="description" content="บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด จำหน่าย ติดตั้ง และซ่อมแซมประตูรีโมทอัตโนมัติแบบครบวงจร แบรนด์ชั้นนำ MAXIM, ALBANO, QUIKO โดยช่างผู้เชี่ยวชาญกว่า 20 ปี">
-    <meta name="keywords" content="ประตูรีโมท, ประตูอัตโนมัติ, ติดตั้งประตูรีโมท, ซ่อมประตูรีโมท, ประตูบานเลื่อนรีโมท, MAXIM, ALBANO, QUIKO">
+    <title>ประตูรีโมท ประตูเลื่อนอัตโนมัติ ติดตั้ง ซ่อมแซมครบวงจร | NC Centergate</title>
+    <meta name="description" content="บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด จำหน่าย ติดตั้ง และซ่อมประตูรีโมท ประตูเลื่อนอัตโนมัติ ประตูรั้วรีโมทครบวงจร มอเตอร์แบรนด์ชั้นนำ MAXIM, ALBANO, QUIKO โดยช่างประสบการณ์กว่า 20 ปี">
+    <meta name="keywords" content="ประตูรีโมท, ประตูเลื่อนอัตโนมัติ, ประตูอัตโนมัติ, ติดตั้งประตูรีโมท, ซ่อมประตูรีโมท, มอเตอร์ประตูรีโมท, ประตูรั้วรีโมท, MAXIM, ALBANO, QUIKO">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- นำเข้าฟอนต์จาก Google Fonts (Sarabun และ Prompt) -->
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <meta name="google-site-verification" content="fS-nu9x7PPKFy3zYUi9x1BXgj7JVd90xtpOf_ZVos3E" />
+    
+    <!-- JSON-LD Structured Data for Local Business SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "NC Centergate (บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด)",
+      "image": "https://www.nccentergate.com/assets/images/home/nccentergate-logo.png",
+      "@id": "https://www.nccentergate.com/#organization",
+      "url": "https://www.nccentergate.com/",
+      "telephone": "+6625784585",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "77/143 ซอย 1 หมู่บ้านเฟรนชิฟ ถนนประเสริฐมนูกิจ 29 แยก 2 (ซอยมัยลาภ)",
+        "addressLocality": "ลาดพร้าว",
+        "addressRegion": "กรุงเทพมหานคร",
+        "postalCode": "10230",
+        "addressCountry": "TH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 13.837587,
+        "longitude": 100.621453
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:30",
+        "closes": "17:30"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100091524721744"
+      ]
+    }
+    </script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body id="top">
-    <!-- 
-      Header & Navigation 
-      ใช้ semantic tag <header> และ <nav> สำหรับส่วนหัวของเว็บไซต์
-    -->
+    <script>
+        if (localStorage.getItem('lang') === 'en') {
+            document.body.classList.add('lang-en');
+        } else {
+            document.body.classList.add('lang-th');
+        }
+    </script>
     <header class="site-header">
         <div class="container header-container">
             <div class="logo">
@@ -22,34 +70,32 @@
                     <img src="assets/images/home/nccentergate-logo.png" alt="NC Centergate Logo">
                 </a>
             </div>
-            <!-- ปุ่ม Hamburger สำหรับ Mobile -->
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#top" class="active">หน้าแรก</a></li>
-                    <li><a href="#about">เกี่ยวกับเรา</a></li>
-                    <li><a href="#products">สินค้า</a></li>
-                    <li><a href="#services">บริการ</a></li>
-                    <li><a href="#reviews">ผลงาน</a></li>
-                    <li><a href="#contact">ติดต่อเรา</a></li>
-                </ul>
-            </nav>
+            <div class="header-right" style="display: flex; align-items: center; gap: 20px;">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#top" class="active"><span class="lang-th">หน้าแรก</span><span class="lang-en">Home</span></a></li>
+                        <li><a href="#about"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en">About Us</span></a></li>
+                        <li><a href="#products"><span class="lang-th">สินค้า</span><span class="lang-en">Products</span></a></li>
+                        <li><a href="#services"><span class="lang-th">บริการ</span><span class="lang-en">Services</span></a></li>
+                        <li><a href="#reviews"><span class="lang-th">ผลงาน</span><span class="lang-en">Gallery</span></a></li>
+                        <li><a href="#contact"><span class="lang-th">ติดต่อเรา</span><span class="lang-en">Contact Us</span></a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <button onclick="toggleLanguage()" class="btn-lang" aria-label="Toggle Language">
+                        🌐 <span class="lang-th">EN</span><span class="lang-en">TH</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- 
-      Main Content Area 
-      ห่อหุ้มเนื้อหาหลักด้วย <main> เพื่อความชัดเจนของโครงสร้าง
-    -->
     <main>
-        <!-- 
-          Hero Banner Section 
-          ส่วนแรกสุดของเว็บไซต์ที่ดึงดูดสายตา
-        -->
         <section class="hero-section">
             <div class="hero-slider">
                 <div class="slide active">
@@ -73,127 +119,168 @@
             
             <div class="container hero-container text-center">
                 <div class="hero-content">
-                    <h1>นวัตกรรมประตูอัตโนมัติ เพื่อความปลอดภัยและสะดวกสบายของคุณ</h1>
-                    <p>NC Centergate ผู้นำเข้าและจัดจำหน่ายมอเตอร์ประตูบานเลื่อนและบานสวิง แบรนด์ชั้นนำ ด้วยประสบการณ์กว่า 20 ปี พร้อมบริการติดตั้งและดูแลหลังการขายโดยทีมช่างผู้เชี่ยวชาญ</p>
+                    <h1>
+                        <span class="lang-th">ประตูรีโมท ประตูเลื่อนอัตโนมัติ โดย NC Centergate</span>
+                        <span class="lang-en">Automatic & Remote Gates by NC Centergate</span>
+                    </h1>
+                    <p>
+                        <span class="lang-th">NC Centergate ผู้นำเข้าและจัดจำหน่ายมอเตอร์ประตูบานเลื่อนและบานสวิง แบรนด์ชั้นนำ ด้วยประสบการณ์กว่า 20 ปี พร้อมบริการติดตั้งและดูแลหลังการขายโดยทีมช่างผู้เชี่ยวชาญ</span>
+                        <span class="lang-en">NC Centergate is a leading importer and distributor of sliding and swing gate motors, providing professional installation and reliable after-sales services with over 20 years of experience.</span>
+                    </p>
                     <div class="hero-actions">
-                        <a href="#products" class="btn btn-primary">ดูสินค้าของเรา</a>
-                        <a href="#contact" class="btn btn-outline hero-btn-outline">ติดต่อสอบถาม</a>
+                        <a href="#products" class="btn btn-primary">
+                            <span class="lang-th">ดูสินค้าของเรา</span>
+                            <span class="lang-en">Our Products</span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline hero-btn-outline">
+                            <span class="lang-th">ติดต่อสอบถาม</span>
+                            <span class="lang-en">Contact Us</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- เกี่ยวกับเรา (About Us) -->
         <section id="about" class="section-padding bg-light">
             <div class="container">
                 <div class="section-header">
-                    <h2>เกี่ยวกับเรา</h2>
-                    <p>ความมุ่งมั่นของเราคือการมอบความปลอดภัยและความสะดวกสบายสูงสุดให้แก่คุณ</p>
+                    <h2>
+                        <span class="lang-th">เกี่ยวกับเรา</span>
+                        <span class="lang-en">About Us</span>
+                    </h2>
+                    <p>
+                        <span class="lang-th">ความมุ่งมั่นของเราคือการมอบความปลอดภัยและความสะดวกสบายสูงสุดให้แก่คุณ</span>
+                        <span class="lang-en">Our commitment is to deliver the highest safety and convenience to you.</span>
+                    </p>
                 </div>
                 <div style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
-                    <p>บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด เริ่มต้นธุรกิจจากความหลงใหลในเทคโนโลยีระบบประตูอัตโนมัติ ด้วยวิสัยทัศน์ที่ต้องการยกระดับมาตรฐานความปลอดภัยในที่พักอาศัยและอาคารพาณิชย์ของคนไทย เราคัดสรรเฉพาะสินค้าคุณภาพสูงจากแบรนด์ชั้นนำระดับโลก และให้ความสำคัญกับบริการหลังการขายที่รวดเร็ว จริงใจ และเชื่อถือได้</p>
+                    <p class="lang-th">บริษัท เอ็น ซี เซ็นเตอร์เกท จำกัด เริ่มต้นธุรกิจจากความหลงใหลในเทคโนโลยีระบบประตูอัตโนมัติ ด้วยวิสัยทัศน์ที่ต้องการยกระดับมาตรฐานความปลอดภัยในที่พักอาศัยและอาคารพาณิชย์ของคนไทย เราคัดสรรเฉพาะสินค้าคุณภาพสูงจากแบรนด์ชั้นนำระดับโลก และให้ความสำคัญกับบริการหลังการขายที่รวดเร็ว จริงใจ และเชื่อถือได้</p>
+                    <p class="lang-en">NC Centergate Co., Ltd. started out of a passion for automatic gate systems. With the vision to elevate safety standards for residential homes and commercial buildings in Thailand, we select only high-quality products from world-leading brands and prioritize rapid, sincere, and reliable after-sales services.</p>
                 </div>
                 <div class="text-center" style="margin-top: 40px;">
-                    <a href="about.html" class="btn btn-outline">อ่านประวัติเพิ่มเติม</a>
+                    <a href="about.html" class="btn btn-outline">
+                        <span class="lang-th">อ่านประวัติเพิ่มเติม</span>
+                        <span class="lang-en">Read History</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- สินค้า (Products) -->
         <section id="products" class="section-padding">
             <div class="container">
                 <div class="section-header">
-                    <h2>สินค้ายอดนิยม</h2>
-                    <p>ระบบมอเตอร์ประตูอัตโนมัติคุณภาพสูง แข็งแรง ทนทาน รองรับทุกการใช้งาน</p>
+                    <h2>
+                        <span class="lang-th">สินค้ายอดนิยม</span>
+                        <span class="lang-en">Popular Products</span>
+                    </h2>
+                    <p>
+                        <span class="lang-th">ระบบมอเตอร์ประตูอัตโนมัติคุณภาพสูง แข็งแรง ทนทาน รองรับทุกการใช้งาน</span>
+                        <span class="lang-en">High-quality automatic gate motor systems, strong, durable, supporting all applications.</span>
+                    </p>
                 </div>
                 <div id="popular-product-grid" class="grid-layout">
-                    <!-- สินค้ายอดนิยมจะถูกเรนเดอร์ด้วย JavaScript ผ่าน product-render.js -->
+                    <!-- Products rendered dynamically by product-render.js -->
                 </div>
                 <div class="text-center" style="margin-top: 40px;">
-                    <a href="products.html" class="btn btn-outline">ดูสินค้าทั้งหมดเพิ่มเติม</a>
+                    <a href="products.html" class="btn btn-outline">
+                        <span class="lang-th">ดูสินค้าทั้งหมดเพิ่มเติม</span>
+                        <span class="lang-en">View All Products</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- บริการ (Services) -->
         <section id="services" class="section-padding bg-light">
             <div class="container">
                 <div class="section-header">
-                    <h2>บริการของเรา</h2>
-                    <p>บริการครบวงจรจากทีมช่างผู้เชี่ยวชาญ ประสบการณ์กว่า 20 ปี</p>
+                    <h2>
+                        <span class="lang-th">บริการของเรา</span>
+                        <span class="lang-en">Our Services</span>
+                    </h2>
+                    <p>
+                        <span class="lang-th">บริการครบวงจรจากทีมช่างผู้เชี่ยวชาญ ประสบการณ์กว่า 20 ปี</span>
+                        <span class="lang-en">Comprehensive services by our expert technician team with over 20 years of experience.</span>
+                    </p>
                 </div>
                 <div class="grid-layout">
                     <div class="card service-card text-center">
                         <div class="card-content">
                             <div class="service-icon">🛠️</div>
-                            <h3>ติดตั้งได้มาตรฐาน</h3>
-                            <p>ติดตั้งรวดเร็ว ปลอดภัย เดินสายไฟเป็นระเบียบ พร้อมทดสอบระบบอย่างละเอียดก่อนส่งมอบ</p>
+                            <h3>
+                                <span class="lang-th">ติดตั้งได้มาตรฐาน</span>
+                                <span class="lang-en">Standard Installation</span>
+                            </h3>
+                            <p>
+                                <span class="lang-th">ติดตั้งรวดเร็ว ปลอดภัย เดินสายไฟเป็นระเบียบ พร้อมทดสอบระบบอย่างละเอียดก่อนส่งมอบ</span>
+                                <span class="lang-en">Fast and safe installation, neat wiring, with thorough system testing before handover.</span>
+                            </p>
                         </div>
                     </div>
                     <div class="card service-card text-center">
                         <div class="card-content">
                             <div class="service-icon">⚙️</div>
-                            <h3>ซ่อมบำรุงและแก้ไข</h3>
-                            <p>รับซ่อมมอเตอร์ประตูทุกรุ่น พร้อมบริการตรวจเช็คสภาพเพื่อยืดอายุการใช้งาน</p>
+                            <h3>
+                                <span class="lang-th">ซ่อมบำรุงและแก้ไข</span>
+                                <span class="lang-en">Repair & Maintenance</span>
+                            </h3>
+                            <p>
+                                <span class="lang-th">รับซ่อมมอเตอร์ประตูทุกรุ่น พร้อมบริการตรวจเช็คสภาพเพื่อยืดอายุการใช้งาน</span>
+                                <span class="lang-en">Repair gate motors of all brands, with inspection service to prolong system lifetime.</span>
+                            </p>
                         </div>
                     </div>
                     <div class="card service-card text-center">
                         <div class="card-content">
                             <div class="service-icon">📦</div>
-                            <h3>จำหน่ายอะไหล่แท้</h3>
-                            <p>มีอะไหล่ แผงวงจร รีโมท เซ็นเซอร์กันหนีบ พร้อมจัดส่งและติดตั้งให้ถึงบ้าน</p>
+                            <h3>
+                                <span class="lang-th">จำหน่ายอะไหล่แท้</span>
+                                <span class="lang-en">Genuine Spare Parts</span>
+                            </h3>
+                            <p>
+                                <span class="lang-th">มีอะไหล่ แผงวงจร รีโมท เซ็นเซอร์กันหนีบ พร้อมจัดส่งและติดตั้งให้ถึงบ้าน</span>
+                                <span class="lang-en">Genuine parts, control boards, remotes, and safety photocells ready for delivery and installation.</span>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <!--<div class="text-center" style="margin-top: 40px;">
-                    <a href="services.html" class="btn btn-outline">รายละเอียดบริการเพิ่มเติม</a>
-                </div>
-                -->
             </div>
         </section>
 
-        <!-- ผลงาน (Reviews) -->
         <section id="reviews" class="section-padding">
             <div class="container">
                 <div class="section-header">
-                    <h2>ผลงานติดตั้งล่าสุด</h2>
-                    <p>ความไว้วางใจจากลูกค้ากว่าพันหลังคาเรือน</p>
+                    <h2>
+                        <span class="lang-th">ผลงานติดตั้งล่าสุด</span>
+                        <span class="lang-en">Latest Installations</span>
+                    </h2>
+                    <p>
+                        <span class="lang-th">ความไว้วางใจจากลูกค้ากว่าพันหลังคาเรือน</span>
+                        <span class="lang-en">Trusted by over thousands of homeowners.</span>
+                    </p>
                 </div>
                 <div class="grid-layout">
-                    <div class="card review-card">
-                        <div class="card-image" style="background-image: url('assets/images/work/1781251245082.jpg'); height: 250px;"></div>
-                        <div class="card-content">
-                            <h3 class="review-title">ผลงานการติดตั้งล่าสุด 1</h3>
-                            <p class="text-small">รายละเอียดงานติดตั้งระบบประตูอัตโนมัติคุณภาพสูง</p>
-                        </div>
-                    </div>
-                    <div class="card review-card">
-                        <div class="card-image" style="background-image: url('assets/images/work/1781251245028.jpg'); height: 250px;"></div>
-                        <div class="card-content">
-                            <h3 class="review-title">ผลงานการติดตั้งล่าสุด 2</h3>
-                            <p class="text-small">บริการติดตั้งด้วยความประณีตโดยทีมช่างผู้เชี่ยวชาญ</p>
-                        </div>
-                    </div>
-                    <div class="card review-card">
-                        <div class="card-image" style="background-image: url('assets/images/work/1781251244950.jpg'); height: 250px;"></div>
-                        <div class="card-content">
-                            <h3 class="review-title">ผลงานการติดตั้งล่าสุด 3</h3>
-                            <p class="text-small">เทคโนโลยีมอเตอร์ประตูรีโมทมาตรฐานสากล</p>
-                        </div>
-                    </div>
+                    <!-- Dynamic review cards rendered by work-render.js -->
                 </div>
                 <div class="text-center" style="margin-top: 40px;">
-                    <a href="reviews.html" class="btn btn-outline">ดูผลงานทั้งหมดเพิ่มเติม</a>
+                    <a href="reviews.html" class="btn btn-outline">
+                        <span class="lang-th">ดูผลงานทั้งหมดเพิ่มเติม</span>
+                        <span class="lang-en">View All Projects</span>
+                    </a>
                 </div>
             </div>
         </section>
-        
-        <!-- ติดต่อเรา (Quick Contact) -->
+
         <section id="contact" class="section-padding bg-light">
             <div class="container">
                 <div class="section-header">
-                    <h2>ติดต่อเรา</h2>
-                    <p>เข้าชมสินค้าที่หน้าร้าน หรือสอบถามข้อมูลเพิ่มเติมได้ทุกช่องทาง</p>
+                    <h2>
+                        <span class="lang-th">ติดต่อเรา</span>
+                        <span class="lang-en">Contact Us</span>
+                    </h2>
+                    <p>
+                        <span class="lang-th">เข้าชมสินค้าที่หน้าร้าน หรือสอบถามข้อมูลเพิ่มเติมได้ทุกช่องทาง</span>
+                        <span class="lang-en">Visit our showroom or reach out to us through any channel.</span>
+                    </p>
                 </div>
                 
                 <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
@@ -201,16 +288,23 @@
                         <div class="map-container" style="border-radius: 16px; overflow: hidden; border: 6px solid #ffffff; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 20px;">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.524584614138!2d100.621453375834!3d13.83758699532911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d7df9d61081%3A0x88f63857319c7f66!2z4Lia4Lij4Li04Lip4Lix4LiXIE5DIENFTlRFUiBHQVRF!5e0!3m2!1sth!2sth!4v1718712000000!5m2!1sth!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <p style="font-size: 1.05rem; color: var(--text-main); font-weight: 500;"><i class="icon">📍</i> 77/143 ซอย 1 หมู่บ้านเฟรนชิฟ ถนนประเสริฐมนูกิจ 29 แยก 2 (ซอยมัยลาภ) กรุงเทพฯ</p>
+                        <p style="font-size: 1.05rem; color: var(--text-main); font-weight: 500;">
+                            <span class="lang-th"><i class="icon">📍</i> 77/143 ซอย 1 หมู่บ้านเฟรนชิฟ ถนนประเสริฐมนูกิจ 29 แยก 2 (ซอยมัยลาภ) กรุงเทพฯ</span>
+                            <span class="lang-en"><i class="icon">📍</i> 77/143 Soi 1, Friendship Village, Prasert-Manukitch 29 Alley, Intersection 2 (Soi Maiyalap), Lat Phrao, Bangkok</span>
+                        </p>
                     </div>
                     
                     <div class="contact-quick-links">
                         <div style="padding: 40px; border-radius: 16px; height: 100%; display: flex; flex-direction: column; justify-content: center; background-color: #ffffff; box-shadow: 0 20px 40px rgba(0, 146, 69, 0.15); border-top: 6px solid var(--primary-color);">
-                            <h3 style="margin-bottom: 25px; color: var(--primary-color); font-size: 1.8rem;">ช่องทางติดต่อด่วน</h3>
+                            <h3 style="margin-bottom: 25px; color: var(--primary-color); font-size: 1.8rem;">
+                                <span class="lang-th">ช่องทางติดต่อด่วน</span>
+                                <span class="lang-en">Quick Contact Channels</span>
+                            </h3>
                             <div class="quick-link-item" style="margin-bottom: 20px;">
                                 <p style="font-weight: 600; margin-bottom: 10px; color: var(--text-heading);">LINE Official Account</p>
                                 <a href="https://line.me/R/ti/p/@740kjpdf" target="_blank" class="btn btn-primary" style="background-color: #06C755; border-color: #06C755; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.1rem; padding: 15px;">
-                                    <span>เพิ่มเพื่อน NC Center Gate</span>
+                                    <span class="lang-th">เพิ่มเพื่อน NC Center Gate</span>
+                                    <span class="lang-en">Add Friend: NC Center Gate</span>
                                 </a>
                             </div>
 
@@ -222,8 +316,11 @@
                             </div>
                             
                             <div class="quick-link-item" style="margin-bottom: 20px;">
-                                <p style="font-weight: 600; margin-bottom: 10px; color: var(--text-heading);">โทรศัพท์สายด่วน</p>
-                                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+                                <p style="font-weight: 600; margin-bottom: 10px; color: var(--text-heading);">
+                                    <span class="lang-th">โทรศัพท์สายด่วน</span>
+                                    <span class="lang-en">Hotline Calls</span>
+                                </p>
+                                <div class="phone-grid">
                                     <a href="tel:025784585" class="btn btn-outline" style="width: 100%; font-size: 1.1rem; padding: 12px;">02-578-4585</a>
                                     <a href="tel:0813313029" class="btn btn-outline" style="width: 100%; font-size: 1.1rem; padding: 12px;">081-331-3029</a>
                                     <a href="tel:0845695610" class="btn btn-outline" style="width: 100%; font-size: 1.1rem; padding: 12px;">084-569-5610</a>
@@ -231,8 +328,14 @@
                             </div>
 
                             <div class="text-center" style="margin-top: 15px; border-top: 1px solid var(--border-color); padding-top: 25px;">
-                                <p style="margin-bottom: 15px; font-size: 0.95rem; color: var(--text-muted);">ต้องการแจ้งซ่อมหรือขอใบเสนอราคาอย่างเป็นทางการ?</p>
-                                <a href="contact.html" class="btn btn-outline" style="color: var(--accent-color); border-color: var(--accent-color); width: 100%;">ไปยังหน้าติดต่อเราและส่งข้อความ</a>
+                                <p style="margin-bottom: 15px; font-size: 0.95rem; color: var(--text-muted);">
+                                    <span class="lang-th">ต้องการแจ้งซ่อมหรือขอใบเสนอราคาอย่างเป็นทางการ?</span>
+                                    <span class="lang-en">Need to request a formal quote or report a repair?</span>
+                                </p>
+                                <a href="contact.html" class="btn btn-outline" style="color: var(--accent-color); border-color: var(--accent-color); width: 100%;">
+                                    <span class="lang-th">ไปยังหน้าติดต่อเราและส่งข้อความ</span>
+                                    <span class="lang-en">Go to Contact Page & Send Message</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -241,13 +344,8 @@
         </section>
     </main>
 
-    <!-- 
-      Footer 
-      ส่วนท้ายของเว็บไซต์ 
-    -->
     <site-footer></site-footer>
 
-    <!-- ไฟล์ JavaScript พื้นฐาน -->
     <script src="assets/js/product-data.js"></script>
     <script src="assets/js/product-render.js"></script>
     <script src="assets/js/work-data.js"></script>
